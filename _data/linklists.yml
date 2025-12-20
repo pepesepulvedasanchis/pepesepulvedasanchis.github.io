@@ -24,8 +24,9 @@ main:
           badge: New
           badge_color: blue
           url: /prints/collections/new/
-        - title: Shop by collection
-          links: :collections
+  #
+  #     - title: Shop by collection
+  #        links: :collections
         - title: Environmental Impact Promise
           url: /prints/pages/environmental-impact-promise
 footer:
