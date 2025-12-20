@@ -1,3 +1,8 @@
+# NOTE:
+# Shopify-related content intentionally disabled.
+# Files and data preserved for future reactivation.
+# To re-enable, uncomment the sections below.
+
 announcement:
   display: false
   icon: book
