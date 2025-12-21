@@ -32,7 +32,10 @@
 }
 
 .menu-logo {
-  padding: 0 8px;
+  padding: 0;
+  min-height: auto;
+  height: auto;
+  line-height: 1;
 }
 
 .menu-logo img {
