@@ -18,3 +18,23 @@
 @import "product";
 
 @import "new-nav";
+
+/* Header logo */
+.menu-logo {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.menu-logo img {
+  height: 32px;
+  width: auto;
+  max-height: 40px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menu-logo img {
+    height: 26px;
+  }
+}
