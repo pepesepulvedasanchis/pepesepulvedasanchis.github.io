@@ -31,11 +31,18 @@
   align-items: center;
 }
 
-.menu-logo {
+/* Neutralize button styles on logo */
+.menu-logo.btn {
   padding: 0;
   min-height: auto;
   height: auto;
   line-height: 1;
+}
+
+.menu-logo {
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
 }
 
 .menu-logo img {
