@@ -4,31 +4,35 @@ main:
       slug: info
       icon: home
       url: /
-    - title: What's new
-      slug: new
-      icon: sparkles
-      url: /new/
-    - title: Writing
+    - title: Blog
       slug: article
       icon: book
       url: /article/
-    - title: Prints
+    - title: CV
+      slug: CV
+      icon: book
+      url: /cv/
+    - title: Downloads
+      slug: downloads
+      icon: sparkles
+      url: /downloads/
+    - title: Proyectos
       slug: prints
       icon: camera-retro
       links:
         - title: Overview
           url: /prints/
-        - title: Browse all products
-          url: /prints/collections/all/
-        - title: Latest additions
-          badge: New
-          badge_color: blue
-          url: /prints/collections/new/
+ #       - title: Browse all products
+#          url: /prints/collections/all/
+#        - title: Latest additions
+#          badge: New
+#          badge_color: blue
+#          url: /prints/collections/new/
   #
   #     - title: Shop by collection
   #        links: :collections
-        - title: Environmental Impact Promise
-          url: /prints/pages/environmental-impact-promise
+ #       - title: Environmental Impact Promise
+  #        url: /prints/pages/environmental-impact-promise
 footer:
   - title: Changelog
     url: /changelog/
