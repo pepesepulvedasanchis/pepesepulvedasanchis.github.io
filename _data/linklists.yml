@@ -20,8 +20,8 @@ main:
       slug: prints
       icon: camera-retro
       links:
-        - title: Overview
-          url: /prints/
+        - title: Resumen
+          url: /resumen/
  #       - title: Browse all products
 #          url: /prints/collections/all/
 #        - title: Latest additions
