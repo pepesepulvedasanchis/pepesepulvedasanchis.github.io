@@ -54,3 +54,5 @@ First lint all your code by running `npm run lint`. Your VSCode settings should 
 ```
 
 Add all your changes `git add .`, commit them `commit -m "commit message"`, and push `git push` them for it to deploy to github pages.
+
+
