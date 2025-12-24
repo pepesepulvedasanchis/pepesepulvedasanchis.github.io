@@ -83,4 +83,9 @@
 .lang-switcher a:hover {
   opacity: 0.7;
 }
-
+/* Force Menu text to remain visible on mobile */
+@media (max-width: 768px) {
+  .menu-trigger .hide-mobile {
+    display: inline;
+  }
+}
