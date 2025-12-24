@@ -76,27 +76,29 @@ homepage:
             date: Nov 2013 - Sep 2017
   location:
     title: Location
-    content: I work remotely from my home and the occasional coffee shop in Ottawa, Ontario.
+    content: I live and work in Valencia, Spain.
   contact:
     title: Contact
 socials:
-  - name: Instagram
-    icon: instagram
-    url: https://instagram.com/connellmccarthy
   - name: Linkedin
     icon: linkedin
-    url: https://www.linkedin.com/in/connellmccarthy/
-  - name: Threads
-    icon: threads
-    url: https://threads.net/connellmccarthy
+    url: https://www.linkedin.com/in/josesepulvedaphd/
   - name: Twitter / X
     icon: twitter
-    url: https://twitter.com/connellmccarthy
-  - name: Dribbble
-    icon: dribbble
-    url: https://dribbble.com/connellmccarthy
+    url: https://x.com/pepe_sepulveda
+  - name: Instagram
+    icon: instagram
+    url: https://www.instagram.com/pepe.sepulveda.37/
+
+#  - name: Threads
+#    icon: threads
+#    url: https://threads.net/connellmccarthy
+
+#  - name: Dribbble
+#    icon: dribbble
+#    url: https://dribbble.com/connellmccarthy
 newsletter:
-  body: Get notified whenever I publish something new, like a new article or a new product.
+  body: Get notified whenever I publish something new.
 # Shopify homepage section disabled on 2025-12-20 The setup day
 # shop:
 #   headline: Bring the outdoors &#8212; indoors
