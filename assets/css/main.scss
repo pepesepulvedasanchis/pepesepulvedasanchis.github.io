@@ -89,3 +89,13 @@
     display: inline;
   }
 }
+.menu-label {
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .menu-label {
+    font-size: 14px;
+  }
+}
