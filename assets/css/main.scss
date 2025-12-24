@@ -43,6 +43,7 @@
   padding: 0 8px;
   display: flex;
   align-items: center;
+  flex-shrink: 1;
 }
 
 .menu-logo img {
@@ -52,9 +53,15 @@
   display: block;
 }
 
-@media (max-width: 768px) {
+/* Mobile portrait header adjustments */
+@media (max-width: 480px) {
   .menu-logo img {
-    height: 26px;
+    height: 20px;
+  }
+
+  .menu-logo {
+    padding: 0 4px;
+    flex-shrink: 1;
   }
 }
 
