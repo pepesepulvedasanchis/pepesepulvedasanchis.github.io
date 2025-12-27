@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<h1 class="visually-hidden">{{ site.title }}</h1>
+
+{% include index/hero.html %}
+{% include index/showreel.html %}
+{% include index/about.html %}
+
+<!-- CONTENIDO PRINCIPAL EN MARKDOWN -->
+<section class="section" data-aos="fade">
+  <div class="wrapper condensed">
+    {{ content }}
+  </div>
+</section>
+
+{% include index/features.html %}
+{% include index/experience.html %}
+{% include index/location.html %}
+{% include index/contact.html %}
+{% include newsletter.html %}
