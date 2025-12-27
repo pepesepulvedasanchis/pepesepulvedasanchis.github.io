@@ -28,11 +28,10 @@ homepage:
     title: Proyectos
     items:
       - title: Inteligencia Artificial para Abogados
-        description: IA para Abogados es un espacio de formación y debates en Inteligencia Artificial enfocada en la profesión legal. Descarga el libro de forma gratuita
-        external: true
+        description: IA para Abogados es un espacio de formación y reflexión en torno a la Inteligencia Artificial aplicada a la profesión legal. Descarga el libro de forma gratuita.
         url: https://coveomusic.com
       - title: Inteligencia Artificial para Periodistas
-        description: IA para Periodistas y Comunicadores es un espacio de formación y debates en Inteligencia Artificial enfocada en el periodismo y la comunicación. Descarga el libro de forma gratuita
+        description: IA para Periodistas y Comunicadores es un espacio de formación y reflexión en torno a la Inteligencia Artificial aplicada al periodismo y la comunicación. Descarga el libro de forma gratuita.
         external: true
         url: https://boandco.studio
   projects:
