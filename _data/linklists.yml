@@ -16,6 +16,7 @@ main:
       slug: cv
       url: /cv/
 
+
 footer:
   - title: Changelog
     url: /changelog/
