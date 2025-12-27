@@ -25,14 +25,16 @@ homepage:
   showreel:
     title: 2023 Showreel
   building:
-    title: Building
+    title: Proyectos
     items:
-      - title: COVEO Music
-        description: COVEO is my audio/visual project that connects music and artwork that resonates both emotionally and aesthetically.
+      - title: Inteligencia Artificial para Abogados
+        description: IA para Abogados es un espacio de formación y debates en Inteligencia Artificial enfocada en la profesión legal. 
+        Descarga el libro de forma gratuita
         external: true
         url: https://coveomusic.com
-      - title: Bo & Co
-        description: Bo & Co is a full-service creative studio that specializes in blending art and technology to create captivating digital experiences.
+      - title: Inteligencia Artificial para Periodistas
+        description: IA para Periodistas y Comunicadores es un espacio de formación y debates en Inteligencia Artificial enfocada en el periodismo y la comunicación. 
+        Descarga el libro de forma gratuita
         external: true
         url: https://boandco.studio
   projects:
@@ -56,24 +58,18 @@ homepage:
   experience:
     title: Experience
     work:
-      - company: Shopify
+      - company: Universidad Internacional de Valencia
         roles:
-          - title: Creative Lead
-            date: Current
-          - title: Senior Designer
-            date: Jan 2019 - Sep 2022
-          - title: Employer Brand Designer
-            date: Mar 2018 - Jan 2019
-      - company: Monstercat
+          - title: Vicerrector de Tecnología y Transformación Digital
+            date: Junio 2023 - Presente
+      - company: I2CV
         roles:
-          - title: Head of Design
-            date: Sep 2015 - Mar 2018
-          - title: Designer
-            date: Jan 2013 - Sep 2015
-      - company: Track Submit
+          - title: Director
+            date: Sep 2015 - Diciembre 2022
+      - company: Singapore Polytechnic
         roles:
-          - title: Co-founder
-            date: Nov 2013 - Sep 2017
+          - title: Director ARTIC (Advanced Research & Technology Infocomm Centre)
+            date: Julio 2013 - Diciembre 2017
   location:
     title: Location
     content: I live and work in Valencia, Spain.
@@ -98,7 +94,7 @@ socials:
 #    icon: dribbble
 #    url: https://dribbble.com/connellmccarthy
 newsletter:
-  body: Get notified whenever I publish something new.
+  body: Recibe una notificación cuando publique algo nuevo. 
 # Shopify homepage section disabled on 2025-12-20 The setup day
 # shop:
 #   headline: Bring the outdoors &#8212; indoors
