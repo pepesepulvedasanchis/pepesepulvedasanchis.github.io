@@ -15,13 +15,13 @@ homepage:
     skills:
       - title: Inteligencia Artificial
       - title: Estrategia Tecnológica
-      - title: creative direction
-      - title: development
-      - title: photography
-      - title: videography
-      - title: motion design
-      - title: composing
-      - title: music production
+      - title: Gestión de la Innovación
+      - title: Estrategia
+      - title: Human Computer Interaction
+      - title: Emprendimiento y Startups
+#      - title: motion design
+#      - title: composing
+  #    - title: music production
   showreel:
     title: 2023 Showreel
   building:
@@ -69,9 +69,9 @@ homepage:
             date: Julio 2013 - Diciembre 2017
   location:
     title: Location
-    content: I live and work in Valencia, Spain.
+    content: Vivo y trabajo en Valencia, España.
   contact:
-    title: Contact
+    title: Contacto
 socials:
   - name: Linkedin
     icon: linkedin
