@@ -2,8 +2,15 @@ title: Pepesepulveda
 description: Personal site and blog
 
 collections:
-  article:
+  projects:
+    output: true
+    permalink: /proyectos/:name/
+
+  blog:
     output: true
     sort_by: date
-    permalink: "/article/:path/"
+    permalink: /blog/:name/
     future: true
+
+
+    
