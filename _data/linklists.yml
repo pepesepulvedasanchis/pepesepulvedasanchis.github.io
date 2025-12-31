@@ -1,14 +1,14 @@
 main:
   links:
-    - title: Info
+    - title: Inicio
       slug: info
       icon: home
       url: /
-    - title: What's new
+    - title: Novedades
       slug: new
       icon: sparkles
       url: /new/
-    - title: Writing
+    - title: Blog
       slug: article
       icon: book
       url: /article/
