@@ -1,26 +1,26 @@
 ---
 layout: default
-title: Writing
-cta_heading: Looking for more articles?
+title: Blog
+cta_heading: Mantente en contacto
 slug: articles
 ---
 
-<h1 class="visually-hidden">Articles</h1>
+<h1 class="visually-hidden">Blog</h1>
 
 <div class="wrapper condensed">
   <div class="section center article_heading">
     <p>
-      I was the worst when it came to sharing my work and the rationale behind it. In an attempt to be more transparent
-      and to live up to the
-      <span class="serif">'do things, tell people'</span> motto, I started writing about my processes.
+      Durante mucho tiempo fui malísimo compartiendo mi trabajo y el razonamiento detrás de cada decisión. Para ser más
+      transparente y vivir el espíritu de
+      <span class="serif">'hacer cosas y contarlas'</span>, empecé a escribir sobre mis procesos.
     </p>
   </div>
 </div>
 
 <div class="wrapper">
   <div class="articles mt-6">
-    {% assign articles = site.article | sort: "date" | reverse | where:"draft",false %} {% for article in articles %} {%
-    assign article_words = article.content | strip_html | strip_newlines | downcase | replace: 'and','' | replace:
+    {% assign articles = site.article | sort: "date" | reverse | where:"draft",false %} {% for article in articles %}
+    {% assign article_words = article.content | strip_html | strip_newlines | downcase | replace: 'and','' | replace:
     'the','' | split:' ' %} {% assign word_count = article_words | size %}
 
     <div class="articles__item">
@@ -34,23 +34,23 @@ slug: articles
         <p class="description m-0">{{ article.description }}</p>
         <div class="article-info-details left">
           <div class="article-details">
-            <p class="muted">Publish date</p>
+            <p class="muted">Fecha de publicación</p>
             <p>{{ article.date | date: "%b %d, %Y" }}</p>
           </div>
           <div class="article-details">
-            <p class="muted">Reading time</p>
-            <p>{{ word_count | times: 0.0076 | round }} minutes</p>
+            <p class="muted">Tiempo de lectura</p>
+            <p>{{ word_count | times: 0.0076 | round }} minutos</p>
           </div>
           <div class="article-details">
-            <p class="muted">Engagement</p>
+            <p class="muted">Interacción</p>
             <p>
               <span class="count loading" data-id="{{ article.slug }}">{% include assets/icons/loading.html %}</span>
-              likes
+              me gusta
             </p>
           </div>
         </div>
         <a class="btn btn__dark btn__round btn__marketing" href="{{ article.url }}"
-          >Read article <i class="far fa-arrow-right" aria-hidden="true"></i
+          >Leer artículo <i class="far fa-arrow-right" aria-hidden="true"></i
         ></a>
       </div>
     </div>
