@@ -5,6 +5,11 @@ main:
       icon: home
       url: /
 
+    - title: Novedades
+      slug: new
+      icon: sparkles
+      url: /new/
+
     - title: Blog
       slug: article
       icon: book
@@ -17,8 +22,9 @@ main:
 
     - title: CV
       slug: cv
-      icon: sparkles
+      icon: user
       url: https://read.cv/connellmccarthy
+
 
 footer:
   - title: Historial de cambios
