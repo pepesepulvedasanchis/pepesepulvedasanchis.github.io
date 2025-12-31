@@ -8,26 +8,23 @@ announcement:
 homepage:
   hero:
     skills:
-      - title: design
-      - title: 3D rendering
-      - title: creative direction
-      - title: development
-      - title: photography
-      - title: videography
-      - title: motion design
-      - title: composing
-      - title: music production
+      - title: Inteligencia Artificial
+      - title: Estrategia Tecnológica
+      - title: Gestión de la Innovación
+      - title: Estrategia
+      - title: Human Computer Interaction
+      - title: Emprendimiento y Startups
   showreel:
-    title: 2023 Showreel
+    title: Showreel
   building:
-    title: Building
+    title: Proyectos
     items:
-      - title: COVEO Music
-        description: COVEO is my audio/visual project that connects music and artwork that resonates both emotionally and aesthetically.
+      - title: Inteligencia Artificial para Abogados
+        description: IA para Abogados es un espacio de formación y reflexión en torno a la Inteligencia Artificial aplicada a la profesión legal. Descarga el libro de forma gratuita.
         external: true
         url: https://coveomusic.com
-      - title: Bo & Co
-        description: Bo & Co is a full-service creative studio that specializes in blending art and technology to create captivating digital experiences.
+      - title: Inteligencia Artificial para Periodistas
+        description: IA para Periodistas y Comunicadores es un espacio de formación y reflexión en torno a la Inteligencia Artificial aplicada al periodismo y la comunicación. Descarga el libro de forma gratuita.
         external: true
         url: https://boandco.studio
   projects:
@@ -49,49 +46,37 @@ homepage:
   articles:
     title: Writing
   experience:
-    title: Experience
+    title: Experiencia
     work:
-      - company: Shopify
+      - company: Universidad Internacional de Valencia
         roles:
-          - title: Creative Lead
+          - title: Vicerrector de Tecnología y Transformación Digital
             date: Current
-          - title: Senior Designer
-            date: Jan 2019 - Sep 2022
-          - title: Employer Brand Designer
-            date: Mar 2018 - Jan 2019
-      - company: Monstercat
+      - company: I2CV
         roles:
-          - title: Head of Design
-            date: Sep 2015 - Mar 2018
-          - title: Designer
-            date: Jan 2013 - Sep 2015
-      - company: Track Submit
+          - title: Director
+            date: Sep 2015 - Diciembre 2022
+      - company: Singapore Polytechnic
         roles:
-          - title: Co-founder
-            date: Nov 2013 - Sep 2017
+          - title: Director ARTIC (Advanced Research & Technology Infocomm Centre)
+            date: Julio 2013 - Diciembre 2017
   location:
     title: Location
-    content: I work remotely from my home and the occasional coffee shop in Ottawa, Ontario.
+    content: Vivo y trabajo en Valencia, España.
   contact:
-    title: Contact
+    title: Contacto
 socials:
-  - name: Instagram
-    icon: instagram
-    url: https://instagram.com/connellmccarthy
   - name: Linkedin
     icon: linkedin
-    url: https://www.linkedin.com/in/connellmccarthy/
-  - name: Threads
-    icon: threads
-    url: https://threads.net/connellmccarthy
+    url: https://www.linkedin.com/in/josesepulvedaphd/
   - name: Twitter / X
     icon: twitter
-    url: https://twitter.com/connellmccarthy
-  - name: Dribbble
-    icon: dribbble
-    url: https://dribbble.com/connellmccarthy
+    url: https://x.com/pepe_sepulveda
+  - name: Instagram
+    icon: instagram
+    url: https://www.instagram.com/pepe.sepulveda.37/
 newsletter:
-  body: Get notified whenever I publish something new, like a new article or a new product.
+  body: Recibe una notificación cuando publique algo nuevo. 
 shop:
   headline: Bring the outdoors &#8212; indoors
   description: Beautiful wilderness prints at affordable prices.
