@@ -29,7 +29,7 @@ main:
         - title: Environmental Impact Promise
           url: /prints/pages/environmental-impact-promise
 footer:
-  - title: Changelog
+  - title: Historial de cambios
     url: /changelog/
   - title: Report an issue
     url: https://github.com/connellmccarthy/connellmccarthy.github.io/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=
