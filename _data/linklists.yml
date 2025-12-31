@@ -4,30 +4,22 @@ main:
       slug: info
       icon: home
       url: /
-    - title: Novedades
-      slug: new
-      icon: sparkles
-      url: /new/
+
     - title: Blog
       slug: article
       icon: book
       url: /article/
-    - title: Prints
+
+    - title: Proyectos
       slug: prints
       icon: camera-retro
-      links:
-        - title: Overview
-          url: /prints/
-        - title: Browse all products
-          url: /prints/collections/all/
-        - title: Latest additions
-          badge: New
-          badge_color: blue
-          url: /prints/collections/new/
-        - title: Shop by collection
-          links: :collections
-        - title: Environmental Impact Promise
-          url: /prints/pages/environmental-impact-promise
+      url: /prints/
+
+    - title: CV
+      slug: cv
+      icon: sparkles
+      url: https://read.cv/connellmccarthy
+
 footer:
   - title: Historial de cambios
     url: /changelog/
