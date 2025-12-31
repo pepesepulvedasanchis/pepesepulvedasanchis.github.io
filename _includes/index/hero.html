@@ -3,12 +3,12 @@
     <img class="avatar" src="/assets/img/avatar.jpg" />
     <p>
       Soy un
-      <span class="serif details-trigger" id="details-trigger">arquitecto de transformaciones digitales.</span> 
+      <span class="serif details-trigger" id="details-trigger">arquitecto de transformaciones digitales.</span><sup>*</sup> 
       <br></p>Enfocado en el equilibro entre <span class="serif">visión</span> y
       <span class="serif">ejecución</span>.
       <span class="details" id="details">
-        * represents a wide array of skills <br />
-        including
+        * representa una serie de habilidades <br />
+        que incluyen
         <span class="skills">
           {% for skill in site.data.content.homepage.hero.skills %}
           <span class="skill" style="--index: {{ forloop.index }}">{{ skill.title }}</span>
