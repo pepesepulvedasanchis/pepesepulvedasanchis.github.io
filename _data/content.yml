@@ -50,7 +50,7 @@ homepage:
     work:
       - company: Universidad Internacional de Valencia
         roles:
-          - title: Vicerrector de Tecnología y Transformación Digital
+        - title: Vicerrector de Tecnología y Transformación Digital
             date: Current
       - company: I2CV
         roles:
