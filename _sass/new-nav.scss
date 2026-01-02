@@ -178,28 +178,44 @@ $nav-animate: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
     }
   }
 
-  &__static {
-    display: grid;
-    grid-template-columns: 1fr 50% 1fr;
-    align-items: center;
+&__static {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* better than 50% for a logo */
+  align-items: center;
 
-    .logo {
-      margin: auto;
-    }
-    :first-child {
-      justify-self: flex-start;
-    }
-    :last-child {
-      justify-self: flex-end;
-    }
-
-    // On mobile, keep the Menu/Cart text visible as a fallback
-    @media screen and (max-width: $break-mobile) {
-      .hide-mobile {
-        display: inline-block !important;
-      }
-    }
+  .logo {
+    margin: 0;
+    justify-self: center;
+    align-self: center;
   }
+
+  /* remove "button padding" behaviour from the logo link */
+  .menu-logo {
+    padding: 0;       /* overrides .btn padding */
+    line-height: 0;   /* avoids baseline/descender quirks */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-logo img,
+  .menu-logo svg {
+    display: block;
+    height: 30px;  /* keep your size here (or 26px) */
+    width: auto;
+  }
+
+  /* target only the 3 direct grid children (menu button / logo / cart) */
+  > :first-child {
+    justify-self: flex-start;
+    align-self: center;
+  }
+  > :last-child {
+    justify-self: flex-end;
+    align-self: center;
+  }
+}
+
 
 
   &__interactive {
