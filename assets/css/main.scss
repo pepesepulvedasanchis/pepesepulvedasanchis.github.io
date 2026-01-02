@@ -19,3 +19,10 @@
 @import "product";
 
 @import "new-nav";
+
+.menu-logo__img {
+  height: 22px; // prueba 22px (sube a 24–28px si lo quieres más grande)
+  width: auto;
+  display: block;
+}
+
