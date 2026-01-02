@@ -183,16 +183,41 @@ $nav-animate: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
     grid-template-columns: 1fr 50% 1fr;
     align-items: center;
 
+    // FIX: limitar a hijos directos (evita que afecte a nodos internos y descuadre)
+    > :first-child {
+      justify-self: flex-start;
+    }
+    > :last-child {
+      justify-self: flex-end;
+    }
+
+    // FIX: centrar y normalizar cajas (logo + botones)
+    .menu-logo {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+
+    .menu-trigger,
+    .cart-trigger {
+      display: flex;
+      align-items: center;
+      line-height: 1;
+    }
+
+    // El elemento del logo (img/svg) que haya dentro
+    .menu-logo img,
+    .menu-logo svg {
+      display: block;
+    }
+
     .logo {
       margin: auto;
     }
-    :first-child {
-      justify-self: flex-start;
-    }
-    :last-child {
-      justify-self: flex-end;
-    }
   }
+
   .btn {
     display: flex;
     align-items: center;
@@ -211,6 +236,7 @@ $nav-animate: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
       }
     }
   }
+
   &__interactive {
     clip-path: inset(0 0 100% 0);
     transition: clip-path $nav-animate;
@@ -221,6 +247,7 @@ $nav-animate: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
     width: 100%;
     display: none;
   }
+
   &__items {
     margin: 1em 0 0;
     padding: 0.4em;
@@ -325,6 +352,7 @@ $nav-animate: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
       }
     }
   }
+
   &__cart {
     margin: 1em 0 0;
     padding: 0.4em;
