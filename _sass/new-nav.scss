@@ -16,7 +16,7 @@ $nav-animate: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
   max-width: 300px;
   height: fit-content;
 
-  // ✅ MOD: increase collapsed height so the logo + text never gets clipped
+  // Increased so bigger logos don't get clipped in the collapsed state
   max-height: 70px;
 
   overflow: hidden;
@@ -35,8 +35,94 @@ $nav-animate: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
     max-width: 250px;
   }
 
+  // Announcement variant
   &.announcement {
     max-width: 480px;
     max-height: 95px;
 
-    &.
+    &.menu-active,
+    &.cart-active {
+      max-height: 800px;
+      max-width: 620px;
+    }
+  }
+
+  &.menu-is-open {
+    .new-nav__interactive {
+      display: flex;
+    }
+  }
+
+  &.cart-is-open {
+    .new-nav__cart {
+      display: block;
+    }
+  }
+
+  &.menu-active {
+    max-height: 800px;
+    max-width: 440px;
+
+    .new-nav__interactive {
+      clip-path: inset(0 0 0 0);
+    }
+
+    .new-nav__items {
+      li {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  &.cart-active {
+    max-height: 800px;
+    max-width: 440px;
+
+    .new-nav__cart {
+      clip-path: inset(0 0 0 0);
+
+      h2,
+      .cart_buttons,
+      .subtotal,
+      .product {
+        opacity: 1;
+      }
+
+      .cart_buttons,
+      .product {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__announcement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    text-decoration: none;
+    background: #ece9ff;
+    border-radius: $border-radius-normal;
+    margin-bottom: 0.4em;
+    transition: 0.4s ease;
+
+    i.fa-arrow-right {
+      color: $color-blue;
+      opacity: 0;
+      transition: 0.4s ease;
+
+      @media screen and (max-width: $break-mobile) {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      background: darken(#ece9ff, 2);
+
+      i.fa-arrow-right {
+        opacity: 1;
+      }
+    }
+
+    .detai
