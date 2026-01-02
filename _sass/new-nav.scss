@@ -584,3 +584,25 @@ $nav-animate: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
     }
   }
 }
+
+
+/* Fix vertical alignment of Menu / Logo / Cart in the top pill */
+.new-nav__static {
+  height: 44px; // matches the pill height visually
+}
+
+.new-nav__static .menu-trigger,
+.new-nav__static .cart-trigger,
+.new-nav__static .menu-logo {
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.new-nav__static .menu-trigger,
+.new-nav__static .cart-trigger {
+  line-height: 1;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
