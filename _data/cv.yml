@@ -1,0 +1,105 @@
+# CV data source (drives /cv/ page)
+# Tip: each item can use either:
+# - icon: (Font Awesome name, e.g. "briefcase")
+# - thumbnail: (image path, e.g. "/assets/img/cv/telefonica.png")
+
+meta:
+  badge: CV
+  intro: Currículum en formato web (con enlaces) y versión en PDF descargable.
+  pdf_url: /assets/cv/Pepe_Sepulveda_CV.pdf
+  pdf_label: Descargar CV en PDF
+
+sections:
+  - id: perfil
+    title: Perfil
+    description: Resumen rápido (qué hago, cómo trabajo y en qué aporto valor).
+    items:
+      - title: Arquitecto de Transformación Digital
+        description: Enfocado en el equilibrio entre visión y ejecución. Estrategia, delivery y adopción.
+        icon: user
+
+  - id: experiencia
+    title: Experiencia
+    description: Roles recientes (añade o elimina entradas según necesites).
+    items:
+      - title: Empresa / Cliente (ejemplo)
+        subtitle: Cargo / Rol (ejemplo)
+        dates: 2024 – Actualidad
+        location: Remoto / Ciudad
+        thumbnail: /assets/img/cv/empresa-ejemplo.png
+        url: https://www.example.com
+        external: true
+        bullets:
+          - Logro o impacto medible (ej.: reducción de tiempos, mejora de conversión, ahorro de costes).
+          - Responsabilidad clave (ej.: liderazgo, arquitectura, roadmap, alineamiento stakeholders).
+          - Tecnologías / herramientas / métodos (ej.: cloud, datos, IA, agile, etc.).
+
+      - title: Empresa / Cliente (ejemplo)
+        subtitle: Cargo / Rol (ejemplo)
+        dates: 2021 – 2024
+        location: Ciudad / País
+        icon: briefcase
+        bullets:
+          - Proyecto destacado (qué hiciste y por qué importa).
+          - Resultado (KPIs / indicadores / aprendizaje).
+
+  - id: proyectos
+    title: Proyectos seleccionados
+    description: 3–6 proyectos con enlace a detalle (si aplica).
+    items:
+      - title: Nombre del proyecto (ejemplo)
+        description: Qué es + resultado (1 línea).
+        icon: diagram-project
+        url: /article/
+        external: false
+
+  - id: educacion
+    title: Educación
+    description: Formación académica (puedes añadir certificaciones aquí o en la sección de abajo).
+    items:
+      - title: Universidad / Escuela (ejemplo)
+        subtitle: Título / Programa
+        dates: 2015 – 2019
+        icon: graduation-cap
+        bullets:
+          - Mención, especialidad, proyecto fin de carrera, etc. (opcional)
+
+  - id: certificaciones
+    title: Certificaciones
+    description: Certificaciones relevantes (1 línea por item).
+    items:
+      - title: Certificación (ejemplo)
+        description: Organismo — año
+        icon: badge-check
+
+  - id: habilidades
+    title: Habilidades
+    description: Capacidades clave (en tarjetas con icono).
+    items:
+      - title: Estrategia digital
+        description: Descubrimiento, visión, roadmap, priorización.
+        icon: compass
+
+      - title: Delivery & ejecución
+        description: Gestión de iniciativas, dependencias, riesgos, alineación.
+        icon: list-check
+
+      - title: Datos e IA
+        description: Casos de uso, adopción, gobernanza, impacto.
+        icon: brain
+
+      - title: Producto
+        description: Value proposition, experimentación, métricas.
+        icon: cube
+
+  - id: idiomas
+    title: Idiomas
+    description: Nivel aproximado (ajusta a tu realidad).
+    items:
+      - title: Español
+        description: Nativo
+        icon: comment
+
+      - title: Inglés
+        description: Profesional / Avanzado
+        icon: comment
