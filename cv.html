@@ -1,0 +1,52 @@
+---
+layout: default
+title: CV
+description: Currículum en formato web y PDF descargable.
+permalink: /cv/
+slug: cv
+---
+
+<div class="section wrapper condensed">
+  <div class="content condensed text-center">
+    <p class="badge badge__grey mb-6">{{ site.data.cv.meta.badge }}</p>
+    <h1 class="m-0">CV</h1>
+    {% if site.data.cv.meta.intro %}
+      <p class="muted mt-4 subtitle">{{ site.data.cv.meta.intro }}</p>
+    {% endif %}
+
+    {% if site.data.cv.meta.pdf_url and site.data.cv.meta.pdf_label %}
+      <div class="buttons mt-10 flex a-center j-center">
+        <a class="btn btn__dark btn__round btn__padding-medium" href="{{ site.data.cv.meta.pdf_url }}" target="_blank" rel="noopener">
+          {{ site.data.cv.meta.pdf_label }}
+          <i class="fal fa-arrow-right ml-1" aria-hidden="true"></i>
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% for section in site.data.cv.sections %}
+  <div class="section" data-aos="fade">
+    <div class="wrapper condensed chapter">
+      <div class="chapter__title">
+        <h3 id="{{ section.id }}">{{ section.title }}</h3>
+        {% if section.description %}
+          <p class="muted mt-2">{{ section.description }}</p>
+        {% endif %}
+      </div>
+
+      <div class="chapter__content">
+        {% for item in section.items %}
+          {% include assets/cv-card.html item=item %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+<div class="section wrapper condensed">
+  <h2 class="m-0">{{ page.cta_heading | default: 'Mantente en contacto' }}</h2>
+  <p class="muted mt-4">Si quieres que te envíe una versión concreta (por rol o industria), dímelo y la preparo.</p>
+  <div class="mt-10">{% include newsletter.html %}</div>
+</div>
+
