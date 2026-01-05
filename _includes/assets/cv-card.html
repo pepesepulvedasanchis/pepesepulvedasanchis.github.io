@@ -1,0 +1,85 @@
+{%- assign item = include.item -%}
+{%- assign link = item.url -%}
+{%- assign external = item.external -%}
+
+{%- comment -%}
+  CV Card component
+  Supports:
+    - thumbnail: "/assets/img/cv/xxx.png" (image)
+    - icon: "briefcase" (Font Awesome name)
+    - title, subtitle, dates, location, description, bullets[]
+    - url + external (optional)
+{%- endcomment -%}
+
+{%- if link and link != '' -%}
+  {%- assign wrapper_tag = 'a' -%}
+{%- else -%}
+  {%- assign wrapper_tag = 'div' -%}
+{%- endif -%}
+
+<{{ wrapper_tag }}
+  class="card whats-new-card{% if link and link != '' %} clickable{% endif %}"
+  {% if link and link != '' %}href="{{ link }}"{% endif %}
+  {% if link and link != '' and external %}target="_blank" rel="noopener nofollow"{% endif %}
+>
+  <div class="whats-new-card__inner">
+    <div class="whats-new-card__left">
+      {% if item.thumbnail and item.thumbnail != '' %}
+        <div class="whats-new-card__thumb border-radius__normal">
+          <img src="{{ item.thumbnail }}" alt="{{ item.title | escape }}" loading="lazy" />
+        </div>
+      {% elsif item.icon and item.icon != '' %}
+        <div class="whats-new-card__icon border-radius__normal">
+          <i class="far fa-{{ item.icon }}" aria-hidden="true"></i>
+        </div>
+      {% else %}
+        <div class="whats-new-card__icon border-radius__normal">
+          <i class="far fa-circle" aria-hidden="true"></i>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="whats-new-card__content">
+      <div class="whats-new-card__top">
+        <div class="whats-new-card__titles">
+          {% if item.title %}
+            <h3 class="m-0">{{ item.title }}</h3>
+          {% endif %}
+
+          {% if item.subtitle and item.subtitle != '' %}
+            <p class="muted mt-2">{{ item.subtitle }}</p>
+          {% endif %}
+
+          {% if item.description and item.description != '' %}
+            <p class="mt-4">{{ item.description }}</p>
+          {% endif %}
+        </div>
+
+        {% if link and link != '' %}
+          <div class="whats-new-card__arrow" aria-hidden="true">
+            <i class="far fa-arrow-right"></i>
+          </div>
+        {% endif %}
+      </div>
+
+      {% if item.dates or item.location %}
+        <div class="whats-new-card__meta mt-4">
+          {% if item.dates and item.dates != '' %}
+            <span class="badge badge__grey">{{ item.dates }}</span>
+          {% endif %}
+          {% if item.location and item.location != '' %}
+            <span class="muted-light ml-2">{{ item.location }}</span>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if item.bullets %}
+        <ul class="mt-6">
+          {% for b in item.bullets %}
+            <li class="muted">{{ b }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</{{ wrapper_tag }}>
