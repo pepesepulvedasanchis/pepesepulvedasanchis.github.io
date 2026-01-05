@@ -4,6 +4,7 @@ title: Proyectos
 description: Proyectos y trabajo seleccionado.
 cta_heading: Mantente en contacto
 slug: prints
+published: false
 ---
 
 <div class="video_modal">
@@ -14,127 +15,90 @@ slug: prints
   <div class="video_wrapper">{% include vimeo.html video_id='379082677' compressed=true %}</div>
 </div>
 
-<div class="section shop-section shop-hero">
-  <div class="wrapper center">
-    <div class="intro-text" data-aos="fade">
-      <h1 class="m-0">{{ site.data.content.shop.headline }}</h1>
-      <p class="m-0 mt-6 muted">{{ site.data.content.shop.description }}</p>
-      <div class="flex a-center center mt-8">
-        <button class="btn btn__white btn__marketing btn__round mr-6 video_trigger">
-          <i class="fas fa-play-circle mr-1" aria-hidden="true"></i> Ver video
-        </button>
+<div class="section wrapper condensed">
+  <div class="content condensed text-center">
+    <h1 class="m-0">{{ page.title }}</h1>
+    <p class="muted mt-4 subtitle">{{ page.description }}</p>
+  </div>
 
-        <a class="btn btn__link" href="{{ site.data.content.shop.cta.url }}"
-          >{{ site.data.content.shop.cta.text }} <i class="far fa-arrow-right ml-1" aria-hidden="true"></i
-        ></a>
+  <div class="prints-grid mt-16">
+    <div class="shop_feature">
+      <div class="image border-radius__large" data-aos="fade-up">
+        <a href="/prints/collections/all/" class="btn btn__dark btn__round btn__padding-medium">
+          Visitar tienda
+          <i class="fal fa-arrow-right ml-1" aria-hidden="true"></i>
+        </a>
+        <img
+          class="border-radius__large"
+          src="/assets/img/prints/prints-shop.jpg"
+          alt="Various prints laid out on a table."
+        />
+      </div>
+      <div class="details mt-12" data-aos="fade">
+        <h2 class="m-0">Print Shop</h2>
+        <p class="muted mt-4">
+          Purchase limited edition prints of my photography + illustrations. Printed on premium quality paper in
+          Vancouver, Canada. Shipping available worldwide.
+        </p>
       </div>
     </div>
-    <div class="prints-at-home" data-aos="fade-up">
-      {% include shop/product-tag.html title='Blackcomb Boardwalk' %} {% include shop/product-tag.html title='New York'
-      %} {% include shop/product-tag.html title='Lighthouse Shore' %}
-      <img class="border-radius__xlarge" src="/assets/img/prints/prints-at-home.jpg" />
+
+    <div class="collection_feature">
+      <div class="image border-radius__large" data-aos="fade-up">
+        <a href="/prints/collections/time/" class="btn btn__dark btn__round btn__padding-medium">
+          View Collection
+          <i class="fal fa-arrow-right ml-1" aria-hidden="true"></i>
+        </a>
+        <img
+          class="border-radius__large"
+          src="/assets/img/prints/prints-collection.jpg"
+          alt="Various photos with prints in front of a wall."
+        />
+      </div>
+      <div class="details mt-12" data-aos="fade">
+        <h2 class="m-0">Time Collection</h2>
+        <p class="muted mt-4">
+          A collection of prints inspired by the defining moments of change in life. Photography and illustration,
+          available in various sizes.
+        </p>
+      </div>
     </div>
   </div>
 </div>
-<div class="wrapper">
-  <div class="section shop-section image-left flex a-center">
+
+<div class="section wrapper condensed shop-section">
+  <h2 class="m-0">Selected work</h2>
+  <p class="muted mt-4">A collection of photography and illustrations I have created throughout the years.</p>
+
+  <div class="section shop-section flex a-center mt-16">
     <div class="image" data-aos="fade-up">
-      {% include shop/product-tag.html title='Rise' %}
+      {% include shop/product-tag.html title='Pathways' %}
       <img
         class="border-radius__large"
-        src="/assets/img/prints/index-environment.jpg"
-        alt="Foggy Babel in a frame on a green wall."
+        src="/assets/img/prints/pathways.jpg"
+        alt="Aerial photo of a valley with a river passing through."
       />
     </div>
     <div class="content" data-aos="fade">
-      <h3>Photos of nature, helping nature</h3>
-      <p>
-        I've partnered with One Tree Planted to assist in global reforestation projects, so for every single print
-        purchased, $10 will go directly to planting trees across the globe.
+      <h3 class="m-0">Pathways</h3>
+      <p class="muted mt-4">
+        The guiding pathways in life are often more subtle than we imagine. They can be discovered and revealed over
+        time, and may even lead to something greater.
       </p>
-      <a class="btn btn__link blue" href="/prints/pages/environmental-impact-promise"
-        >Read my environmental impact promise <i class="far fa-arrow-right ml-1" aria-hidden="true"></i
-      ></a>
+      <div class="buttons mt-10 flex a-center j-center">
+        <a href="/prints/products/pathways/" class="btn btn__dark btn__round btn__padding-medium">
+          View product
+          <i class="fal fa-arrow-right ml-1" aria-hidden="true"></i>
+        </a>
+        <button class="btn btn__link btn__plain video_trigger">
+          Watch video
+          <i class="fal fa-play ml-1" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="section shop-section image-right flex a-center">
     <div class="content" data-aos="fade">
-      <h3>Museum grade quality</h3>
-      <p>
-        All photos are printed through Giclée, meaning your print will never fade, or turn yellow. Printed on premium
-        photographic paper with a satin lustre finish, brings out the intense colours and rich details.
-      </p>
-      <a class="btn btn__link blue" href="/prints/collections/all/"
-        >Shop all products <i class="far fa-arrow-right ml-1" aria-hidden="true"></i
-      ></a>
-    </div>
-    <div class="image" data-aos="fade-up">
-      {% include shop/product-tag.html title='Seymour Sunset' %}
-      <img
-        class="border-radius__large"
-        src="/assets/img/prints/index-quality.jpg"
-        alt="Seymour Sunset in a frame on a wall in a gallery."
-      />
-    </div>
-  </div>
-
-  <div class="section shop-section full">
-    <div class="content" data-aos="fade">
-      <p class="m-0">
-        <span class="badge"><i class="far fa-sparkles" aria-hidden="true"></i> New</span>
-      </p>
-      <h3>Hot off the press</h3>
-      <p>The latest additions featuring photographs from British Columbia, New York, Québec, and rural Ottawa.</p>
-    </div>
-    {% include shop/collection-list.html limit=6 tag='batch-06' %}
-    <p class="center">
-      <a class="btn btn__marketing btn__dark btn__round center" href="/prints/collections/new"
-        >Shop the collection <i class="far fa-arrow-right ml-1" aria-hidden="true"></i
-      ></a>
-    </p>
-  </div>
-
-  <div class="section shop-section full">
-    <div class="content" data-aos="fade">
-      <h3>Exclusively original</h3>
-      <p>All photos were taken by me during my adventures from all across Canada, and the Pacific Northwest.</p>
-    </div>
-    <img
-      data-aos="fade-up"
-      class="border-radius__large mt-10"
-      src="/assets/img/prints/connell-brandywine.jpg"
-      alt="Connell looking at a camera in front of a mountain valley view."
-    />
-  </div>
-
-  <div class="section shop-section image-left flex a-center">
-    <div class="image" data-aos="fade-up">
-      {% include shop/product-tag.html title='Time' %}
-      <img
-        class="border-radius__large"
-        src="/assets/img/prints/abstract-desk.jpg"
-        alt="Office desk with the two prints Time, and Days to Come, in frames on the wall."
-      />
-    </div>
-    <div class="content" data-aos="fade">
-      <h3>Abstract Series</h3>
-      <p>After much request, the abstract art pieces I made for my home are now available for everyone.</p>
-      <a class="btn btn__link blue" href="/prints/collections/abstract"
-        >Browse the collection <i class="far fa-arrow-right ml-1" aria-hidden="true"></i
-      ></a>
-    </div>
-  </div>
-  {% include shop/collection-list.html limit=3 tag='abstract' %}
-
-  <div class="section" data-aos="fade">
-    <h2>Shop by collection</h2>
-    <div class="list">
-      {% for collection in site.collections %} {% unless collection.slug == 'shop-all' or collection.collection_list ==
-      false %} {% include card.html url = collection.url icon = collection.icon size = 'small' title = collection.title
-      description = collection.description cta = 'Browse collection' external = false %} {% endunless %} {% endfor %}
-    </div>
-  </div>
-
-  {% include newsletter.html %}
-</div>
+      <h3 class="m-0">Brandywine</h3>
+      <p class="muted mt-4
