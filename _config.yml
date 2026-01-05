@@ -3,12 +3,12 @@ email: me@pepesepulveda.com
 description: >- # this means to ignore newlines until "baseurl:"
   Arquitecto de transformaciones digitales.
   Enfocado en el equilibrio entre visión y ejecución.
-url: "https://pepesepulveda.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.pepesepulveda.com" # must match CNAME host
 twitter_username: pepe_sepulveda
 github_username: pepesepulvedasanchis
 permalink: pretty
 image_path: /assets/articles/
-repository: connellmccarthy/connellmccarthy.github.io
+repository: pepesepulvedasanchis/pepesepulvedasanchis.github.io
 
 # Feature flag: set to true later to wake the shop back up
 shop_enabled: false
