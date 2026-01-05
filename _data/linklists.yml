@@ -15,27 +15,35 @@ main:
       icon: book
       url: /article/
 
+    # Kept for future use; hidden automatically when shop_enabled: false
     - title: Proyectos
       slug: prints
       icon: camera-retro
       url: /prints/
 
+    # Now points to your new internal CV page
     - title: CV
       slug: cv
       icon: user
-      url: https://read.cv/connellmccarthy
-
+      url: /cv/
 
 footer:
   - title: Historial de cambios
     url: /changelog/
-  - title: Report an issue
-    url: https://github.com/connellmccarthy/connellmccarthy.github.io/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=
+
+  - title: Reportar un issue
+    url: https://github.com/pepesepulvedasanchis/pepesepulvedasanchis.github.io/issues/new
+
+  # Kept for future use; hidden automatically when shop_enabled: false
   - title: Environmental Impact Promise
     url: /prints/pages/environmental-impact-promise
-  - title: Terms and Conditions
+
+  - title: Términos y condiciones
     url: /legal/terms
-  - title: Privacy Policy
+
+  - title: Política de privacidad
     url: /legal/privacy
-  - title: Return Policy
+
+  # Kept for future use; hidden automatically when shop_enabled: false
+  - title: Política de devoluciones
     url: /legal/returns
