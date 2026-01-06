@@ -1,52 +1,55 @@
 ---
 layout: default
 title: CV
-description: Currículum en formato web y PDF descargable.
-permalink: /cv/
+cta_heading: Mantente en contacto
 slug: cv
+permalink: /cv/
 ---
 
-<div class="section wrapper condensed">
-  <div class="content condensed text-center">
-    <p class="badge badge__grey mb-6">{{ site.data.cv.meta.badge }}</p>
-    <h1 class="m-0">CV</h1>
-    {% if site.data.cv.meta.intro %}
-      <p class="muted mt-4 subtitle">{{ site.data.cv.meta.intro }}</p>
-    {% endif %}
+<div class="wrapper condensed margin-top">
+  <p class="center" data-aos="fade">
+    <span class="badge blue">{{ site.data.cv.meta.badge }}</span>
+  </p>
 
-    {% if site.data.cv.meta.pdf_url and site.data.cv.meta.pdf_label %}
-      <div class="buttons mt-10 flex a-center j-center">
-        <a class="btn btn__dark btn__round btn__padding-medium" href="{{ site.data.cv.meta.pdf_url }}" target="_blank" rel="noopener">
-          {{ site.data.cv.meta.pdf_label }}
-          <i class="fal fa-arrow-right ml-1" aria-hidden="true"></i>
-        </a>
-      </div>
-    {% endif %}
-  </div>
-</div>
+  {% if site.data.cv.meta.intro %}
+    <p class="muted center mt-4" data-aos="fade">
+      {{ site.data.cv.meta.intro }}
+    </p>
+  {% endif %}
 
-{% for section in site.data.cv.sections %}
-  <div class="section" data-aos="fade">
-    <div class="wrapper condensed chapter">
-      <div class="chapter__title">
-        <h3 id="{{ section.id }}">{{ section.title }}</h3>
-        {% if section.description %}
-          <p class="muted mt-2">{{ section.description }}</p>
-        {% endif %}
-      </div>
+  {% if site.data.cv.meta.pdf_url and site.data.cv.meta.pdf_label %}
+    <a
+      href="{{ site.data.cv.meta.pdf_url }}"
+      class="btn btn__basic center mt-8"
+      target="_blank"
+      rel="noopener"
+      data-aos="fade"
+    >
+      {{ site.data.cv.meta.pdf_label }}
+    </a>
+  {% endif %}
 
-      <div class="chapter__content">
+  {% for section in site.data.cv.sections %}
+    <div class="section mt-16" data-aos="fade">
+      <p class="center">
+        <strong>{{ section.title }}</strong>
+      </p>
+
+      {% if section.description %}
+        <p class="muted center mt-2">{{ section.description }}</p>
+      {% endif %}
+
+      <div class="section product-list mt-8">
         {% for item in section.items %}
-          {% include assets/cv-card.html item=item %}
+          {% include assets/cv-card.html link=item %}
         {% endfor %}
       </div>
     </div>
-  </div>
-{% endfor %}
-
-<div class="section wrapper condensed">
-  <h2 class="m-0">{{ page.cta_heading | default: 'Mantente en contacto' }}</h2>
-  <p class="muted mt-4">Si quieres que te envíe una versión concreta (por rol o industria), dímelo y la preparo.</p>
-  <div class="mt-10">{% include newsletter.html %}</div>
+  {% endfor %}
 </div>
 
+<div class="section wrapper condensed">
+  <h2 class="m-0">{{ page.cta_heading }}</h2>
+  <p class="muted mt-4">Recibe notificaciones cuando publique algo nuevo.</p>
+  <div class="mt-10">{% include newsletter.html %}</div>
+</div>
