@@ -15,15 +15,15 @@ sections:
     description: Resumen rápido (qué hago, cómo trabajo y en qué aporto valor).
     items:
       - title: Arquitecto de Transformación Digital
-        description: 
+        description: >-
           Diseño y despliego soluciones de IA y tecnología educativa que equilibran visión y ejecución:
           estrategia → arquitectura → delivery → adopción. Escribo y doy charlas sobre el impacto de la
           tecnología en la sociedad y el futuro de la tecnología y la educación.
         icon: user
         bullets:
-          - Enfoque end-to-end: visión, estrategia, diseño de solución, despliegue y adopción.
-          - IA aplicada a educación (incl. IA generativa), plataformas EdTech y rediseño de procesos.
-          - Gestión del cambio: adopción, formación, gobernanza y alineamiento de stakeholders.
+          - "Enfoque end-to-end: visión, estrategia, diseño de solución, despliegue y adopción."
+          - "IA aplicada a educación (incl. IA generativa), plataformas EdTech y rediseño de procesos."
+          - "Gestión del cambio: adopción, formación, gobernanza y alineamiento de stakeholders."
         extra:
           base: Valencia
           modalidad: Remoto internacional (Europa, Asia, mercados emergentes)
@@ -62,8 +62,8 @@ sections:
         dates: 1991 – 1999
         icon: graduation-cap
         bullets:
-          - Beca de estudios (1 año) en University of Texas at Austin (EE. UU.).
-          - Beca Erasmus (1 año) en University of Leeds (Reino Unido).
+          - "Beca de estudios (1 año) en University of Texas at Austin (EE. UU.)."
+          - "Beca Erasmus (1 año) en University of Leeds (Reino Unido)."
 
   - id: certificaciones
     title: Certificaciones
@@ -168,63 +168,3 @@ sections:
         description: Plataforma inmersiva para prácticas en Ciencias de la Salud (7.000 estudiantes).
         icon: vr-cardboard
         url: /projects/hospital-virtual/
-        external: false
-
-      - title: Tutores / asistentes de IA para estudiantes
-        description: Diseño y despliegue a escala (27.000 estudiantes).
-        icon: brain
-        url: /projects/tutores-ia/
-        external: false
-
-      - title: Enablement de IA para profesorado
-        description: Adopción y escalado de casos de uso con gobernanza y acompañamiento.
-        icon: chalkboard-user
-        url: /projects/enablement-ia/
-        external: false
-
-      - title: XR/AR en industria y sector público
-        description: Soluciones de training y soporte operativo en entornos reales.
-        icon: cubes
-        url: /projects/xr-ar/
-        external: false
-
-  - id: habilidades
-    title: Habilidades
-    description: Capacidades clave.
-    items:
-      - title: Estrategia y transformación
-        description: Visión, roadmap, priorización, governance y gestión de stakeholders.
-        icon: compass
-
-      - title: Arquitectura de soluciones
-        description: Diseño end-to-end, integraciones, escalabilidad y operación.
-        icon: sitemap
-
-      - title: Datos e IA
-        description: Casos de uso (incl. IA generativa), adopción responsable, medición de impacto y automatización.
-        icon: brain
-
-      - title: Producto y delivery
-        description: Propuesta de valor, ejecución, métricas, calidad y despliegue.
-        icon: cube
-
-      - title: Change management
-        description: Adopción, formación, comunicación, alineamiento y escalado.
-        icon: people-arrows
-
-  - id: idiomas
-    title: Idiomas
-    description: Nivel aproximado (ajusta a tu realidad).
-    items:
-      - title: Español
-        description: Nativo
-        icon: comment
-
-      - title: Inglés
-        description: Avanzado / Profesional
-        icon: comment
-
-      - title: Italiano
-        description: Profesional
-        icon: comment
-
