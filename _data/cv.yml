@@ -1,13 +1,13 @@
 meta:
   badge: "CV"
-  intro: "Currículum en formato web (con enlaces) y versión en PDF descargable."
+  intro: []
   pdf_url: "/assets/cv/Pepe_Sepulveda_CV.pdf"
   pdf_label: "Descargar CV en PDF"
 
 sections:
   - id: "perfil"
     title: "Perfil"
-    description: "Resumen rápido (qué hago, cómo trabajo y en qué aporto valor)."
+    description: []
     items:
       - title: "Arquitecto de Transformación Digital"
         subtitle: ""
