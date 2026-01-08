@@ -32,7 +32,7 @@ sections:
         subtitle: "Business Analytics"
         dates: "2016"
         location: ""
-        icon: "graduation-cap"
+         thumbnail: "/assets/img/cv/WUP.png"
         description: ""
         bullets: []
 
@@ -40,7 +40,7 @@ sections:
         subtitle: "MBA"
         dates: "2012"
         location: ""
-        icon: "graduation-cap"
+        thumbnail: "/assets/img/cv/OU.jpg"
         description: ""
         bullets: []
 
@@ -48,7 +48,7 @@ sections:
         subtitle: "Doctor en Física (Summa Cum Laude)"
         dates: "2003"
         location: ""
-        icon: "graduation-cap"
+        thumbnail: "/assets/img/cv/UV.gif"
         description: ""
         bullets:
           - "Tesis: Estratificación del riesgo en cardiopatía isquémica utilizando algoritmos de inteligencia artificial."
@@ -57,7 +57,7 @@ sections:
         subtitle: "Diploma de Estudios Avanzados"
         dates: "2001"
         location: ""
-        icon: "graduation-cap"
+        thumbnail: "/assets/img/cv/UV.gif"
         description: ""
         bullets:
           - "Tesis: Redes neuronales artificiales para el estudio del screening mamográfico."
@@ -66,7 +66,9 @@ sections:
         subtitle: "Licenciado en Física (Electrónica e Informática)"
         dates: "1999"
         location: ""
-        icon: "graduation-cap"
+        thumbnail: "/assets/img/cv/UV.gif"
+        thumbnail: "/assets/img/cv/UV.gif"
+        thumbnail: "/assets/img/cv/UT.png"
         description: ""
         bullets:
           - "Beca de estudios (1 año) en University of Texas at Austin (EE. UU.)."
@@ -80,7 +82,7 @@ sections:
         subtitle: ""
         dates: ""
         location: ""
-        icon: "badge-check"
+        thumbnail: "/assets/img/cv/UVan.svg"
         description: "Vanderbilt University"
         bullets: []
 
