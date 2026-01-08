@@ -63,17 +63,17 @@ sections:
           
       - title: "University of Texas at Austin, USA"
         subtitle: Beca de estudios internacionales
-        dates: "1998"
+        dates: "1998 - 1999"
         location: ""
-        thumbnail: "/assets/img/cv/UT.gif"
+        thumbnail: "/assets/img/cv/UT.png"
         description: ""
         bullets: []
 
       - title: "University of Leeds, UK"
         subtitle: Beca Erasmus
-        dates: "1996"
+        dates: "1996 - 1997"
         location: ""
-        thumbnail: "/assets/img/cv/UL.gif"
+        thumbnail: "/assets/img/cv/UL.png"
         description: ""
         bullets: []
         
