@@ -28,9 +28,9 @@ sections:
     title: "Educación"
     description: "Formación académica principal."
     items:
-      - title: "Wharton School of Business, University of Pennsylvania"
+      - title: "Wharton School of Business, University of Pennsylvania, USA"
         subtitle: "Business Analytics"
-        dates: "2015 – 2016"
+        dates: "2016"
         location: ""
         icon: "graduation-cap"
         description: ""
@@ -38,7 +38,7 @@ sections:
 
       - title: "The Open University (Milton Keynes, UK)"
         subtitle: "MBA"
-        dates: "2010 – 2012"
+        dates: "2012"
         location: ""
         icon: "graduation-cap"
         description: ""
@@ -46,7 +46,7 @@ sections:
 
       - title: "Universidad de Valencia"
         subtitle: "Doctor en Física (Summa Cum Laude)"
-        dates: "1999 – 2003"
+        dates: "2003"
         location: ""
         icon: "graduation-cap"
         description: ""
@@ -55,7 +55,7 @@ sections:
 
       - title: "Universidad de Valencia"
         subtitle: "Diploma de Estudios Avanzados"
-        dates: "1999 – 2001"
+        dates: "2001"
         location: ""
         icon: "graduation-cap"
         description: ""
@@ -64,7 +64,7 @@ sections:
 
       - title: "Universidad de Valencia"
         subtitle: "Licenciado en Física (Electrónica e Informática)"
-        dates: "1991 – 1999"
+        dates: "1999"
         location: ""
         icon: "graduation-cap"
         description: ""
@@ -150,7 +150,7 @@ sections:
           - "Impulso del Espacio de Inteligencia Artificial (Facultad de Ciencias Jurídicas)."
           - "Promotor de la colaboración VIU–AVIA en formación y transferencia tecnológica."
 
-      - title: "I2CV – UPV Campus de Vera"
+      - title: "I2CV"
         subtitle: "Director"
         dates: "2018 – 2023"
         location: "Valencia (España)"
