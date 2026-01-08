@@ -13,7 +13,7 @@ sections:
         subtitle: ""
         dates: ""
         location: ""
-        icon: "user"
+        icon: []
         description: "Diseño y despliego soluciones de IA y tecnología educativa que equilibran visión y ejecución: estrategia → arquitectura → delivery → adopción. Escribo y doy charlas sobre el impacto de la tecnología en la sociedad y el futuro de la tecnología y la educación."
         bullets:
           - "Enfoque end-to-end: visión, estrategia, diseño de solución, despliegue y adopción."
