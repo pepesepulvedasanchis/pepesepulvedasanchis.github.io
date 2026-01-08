@@ -54,23 +54,31 @@ sections:
           - "Tesis: Estratificación del riesgo en cardiopatía isquémica utilizando algoritmos de inteligencia artificial."
 
       - title: "Universidad de Valencia"
-        subtitle: "Diploma de Estudios Avanzados"
-        dates: "2001"
-        location: ""
-        thumbnail: "/assets/img/cv/UV.gif"
-        description: ""
-        bullets:
-          - "Tesis: Redes neuronales artificiales para el estudio del screening mamográfico."
-
-      - title: "Universidad de Valencia"
         subtitle: "Licenciado en Física (Electrónica e Informática)"
         dates: "1999"
         location: ""
         thumbnail: "/assets/img/cv/UV.gif"
         description: ""
-        bullets:
-          - "Beca de estudios (1 año) en University of Texas at Austin (EE. UU.)."
-          - "Beca Erasmus (1 año) en University of Leeds (Reino Unido)."
+        bullets: []
+          
+      - title: "University of Texas at Austin, USA"
+        subtitle: Beca de estudios internacionales
+        dates: "1998"
+        location: ""
+        thumbnail: "/assets/img/cv/UT.gif"
+        description: ""
+        bullets: []
+
+      - title: "University of Leeds, UK"
+        subtitle: Beca Erasmus
+        dates: "1996"
+        location: ""
+        thumbnail: "/assets/img/cv/UL.gif"
+        description: ""
+        bullets: []
+        
+
+
 
   - id: "certificaciones"
     title: "Certificaciones"
