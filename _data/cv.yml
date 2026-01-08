@@ -1,8 +1,3 @@
-# CV data source (drives /cv/ page)
-# Tip: each item can use either:
-# - icon: (Font Awesome name, e.g. "briefcase")
-# - thumbnail: (image path, e.g. "/assets/img/cv/telefonica.png")
-
 meta:
   badge: CV
   intro: Currículum en formato web (con enlaces) y versión en PDF descargable.
@@ -107,12 +102,12 @@ sections:
         location: Valencia (España)
         icon: building-columns
         bullets:
-          - Liderazgo de tecnología aplicada a enseñanza y aprendizaje (gestión, estrategia, desarrollo y despliegue).
-          - Creación del Hospital Virtual (metaverso) para prácticas (7.000 estudiantes).
-          - Diseño y despliegue de tutores/asistentes de IA para estudiantes (27.000 estudiantes).
-          - Formación en IA generativa para profesorado y alumnado.
-          - Impulso del Espacio de Inteligencia Artificial (Facultad de Ciencias Jurídicas).
-          - Promotor de la colaboración VIU–AVIA en formación y transferencia tecnológica.
+          - "Liderazgo de tecnología aplicada a enseñanza y aprendizaje (gestión, estrategia, desarrollo y despliegue)."
+          - "Creación del Hospital Virtual (metaverso) para prácticas (7.000 estudiantes)."
+          - "Diseño y despliegue de tutores/asistentes de IA para estudiantes (27.000 estudiantes)."
+          - "Formación en IA generativa para profesorado y alumnado."
+          - "Impulso del Espacio de Inteligencia Artificial (Facultad de Ciencias Jurídicas)."
+          - "Promotor de la colaboración VIU–AVIA en formación y transferencia tecnológica."
 
       - title: I2CV – UPV Campus de Vera
         subtitle: Director
@@ -120,12 +115,12 @@ sections:
         location: Valencia (España)
         icon: briefcase
         bullets:
-          - Iniciativa del Sistema de Gestión de Datos de la Comunitat Valenciana (SGD).
-          - Grupo de expertos para la Ley Valenciana de Desarrollo de la Sociedad Digital.
-          - Proyectos con Conselleria de Economía Sostenible (sectores productivos, comercio y trabajo).
-          - Consultoría para Conselleria de Sanidad en proyectos de Compra Pública Innovadora (MEDP, IMAS).
-          - Estrategia y fundraising del proyecto European Universities ENHANCE (UPV).
-          - Participación en iniciativas de transferencia y ecosistema (Startup Valencia, jurado innovación, etc.).
+          - "Iniciativa del Sistema de Gestión de Datos de la Comunitat Valenciana (SGD)."
+          - "Grupo de expertos para la Ley Valenciana de Desarrollo de la Sociedad Digital."
+          - "Proyectos con Conselleria de Economía Sostenible (sectores productivos, comercio y trabajo)."
+          - "Consultoría para Conselleria de Sanidad en proyectos de Compra Pública Innovadora (MEDP, IMAS)."
+          - "Estrategia y fundraising del proyecto European Universities ENHANCE (UPV)."
+          - "Participación en iniciativas de transferencia y ecosistema (Startup Valencia, jurado innovación, etc.)."
 
       - title: Singapore Polytechnic — ARTIC (Applied Research & Technology for Infocomm Centre)
         subtitle: Centre Director (Founder)
@@ -133,11 +128,11 @@ sections:
         location: Singapur
         icon: diagram-project
         bullets:
-          - Obtención de financiación pública y privada; dirección de un equipo de 15–20 investigadores.
-          - Crecimiento del centro de 4 a 20 investigadores y financiación x10 respecto al periodo anterior.
-          - 25+ proyectos de tecnología para aprendizaje y training (IA, VR/AR, IoT, mobile/web).
-          - Proyectos con industria (P&G, NYK, Bromma, NXP, Airbus, entre otros) y múltiples pymes.
-          - Colaboraciones con agencias estatales (salud, educación, puertos, fuerzas del orden, etc.).
+          - "Obtención de financiación pública y privada; dirección de un equipo de 15–20 investigadores."
+          - "Crecimiento del centro de 4 a 20 investigadores y financiación x10 respecto al periodo anterior."
+          - "25+ proyectos de tecnología para aprendizaje y training (IA, VR/AR, IoT, mobile/web)."
+          - "Proyectos con industria (P&G, NYK, Bromma, NXP, Airbus, entre otros) y múltiples pymes."
+          - "Colaboraciones con agencias estatales (salud, educación, puertos, fuerzas del orden, etc.)."
 
       - title: National University of Singapore (NUS Enterprise) — Industry Liaison Office
         subtitle: Senior Manager – Head of ICT Group
@@ -145,10 +140,10 @@ sections:
         location: Singapur
         icon: handshake
         bullets:
-          - Gestión de propiedad intelectual, patentes, licencias y acuerdos de comercialización.
-          - Creación de TechLaunch (evento de transferencia tecnológica) con 600+ participantes.
-          - Incremento x4 del número de licencias frente al periodo anterior.
-          - Co-creación de LaunchPad (curso para startups basado en Lean Startup).
+          - "Gestión de propiedad intelectual, patentes, licencias y acuerdos de comercialización."
+          - "Creación de TechLaunch (evento de transferencia tecnológica) con 600+ participantes."
+          - "Incremento x4 del número de licencias frente al periodo anterior."
+          - "Co-creación de LaunchPad (curso para startups basado en Lean Startup)."
 
       - title: Earlier career (selección)
         subtitle: Investigación aplicada, docencia y proyectos internacionales
@@ -156,9 +151,9 @@ sections:
         location: Europa / Asia / EE. UU.
         icon: globe
         bullets:
-          - Research Fellow en NUS (IDMI/Keio-NUS CUTE Center): HCI, physical computing, data analysis y computer vision.
-          - Marie Curie Fellow (Italia/Alemania) y Visiting Researcher en Fraunhofer IGD (Alemania).
-          - Docencia universitaria en ingeniería electrónica (Universidad de Valencia).
+          - "Research Fellow en NUS (IDMI/Keio-NUS CUTE Center): HCI, physical computing, data analysis y computer vision."
+          - "Marie Curie Fellow (Italia/Alemania) y Visiting Researcher en Fraunhofer IGD (Alemania)."
+          - "Docencia universitaria en ingeniería electrónica (Universidad de Valencia)."
 
   - id: proyectos
     title: Proyectos seleccionados
@@ -168,3 +163,62 @@ sections:
         description: Plataforma inmersiva para prácticas en Ciencias de la Salud (7.000 estudiantes).
         icon: vr-cardboard
         url: /projects/hospital-virtual/
+        external: false
+
+      - title: Tutores / asistentes de IA para estudiantes
+        description: Diseño y despliegue a escala (27.000 estudiantes).
+        icon: brain
+        url: /projects/tutores-ia/
+        external: false
+
+      - title: Enablement de IA para profesorado
+        description: Adopción y escalado de casos de uso con gobernanza y acompañamiento.
+        icon: chalkboard-user
+        url: /projects/enablement-ia/
+        external: false
+
+      - title: XR/AR en industria y sector público
+        description: Soluciones de training y soporte operativo en entornos reales.
+        icon: cubes
+        url: /projects/xr-ar/
+        external: false
+
+  - id: habilidades
+    title: Habilidades
+    description: Capacidades clave.
+    items:
+      - title: Estrategia y transformación
+        description: Visión, roadmap, priorización, governance y gestión de stakeholders.
+        icon: compass
+
+      - title: Arquitectura de soluciones
+        description: Diseño end-to-end, integraciones, escalabilidad y operación.
+        icon: sitemap
+
+      - title: Datos e IA
+        description: Casos de uso (incl. IA generativa), adopción responsable, medición de impacto y automatización.
+        icon: brain
+
+      - title: Producto y delivery
+        description: Propuesta de valor, ejecución, métricas, calidad y despliegue.
+        icon: cube
+
+      - title: Change management
+        description: Adopción, formación, comunicación, alineamiento y escalado.
+        icon: people-arrows
+
+  - id: idiomas
+    title: Idiomas
+    description: Nivel aproximado (ajusta a tu realidad).
+    items:
+      - title: Español
+        description: Nativo
+        icon: comment
+
+      - title: Inglés
+        description: Avanzado / Profesional
+        icon: comment
+
+      - title: Italiano
+        description: Profesional
+        icon: comment
