@@ -34,12 +34,16 @@
         <p class="muted m-0 mt-2">{{ item.description }}</p>
       {% endif %}
 
-      {% if item.dates or item.location %}
-        <p class="muted m-0 mt-2">
-          {% if item.dates %}{{ item.dates }}{% endif %}
-          {% if item.dates and item.location %} · {% endif %}
-          {% if item.location %}{{ item.location }}{% endif %}
-        </p>
+      {% if item.dates and item.dates != '' %}
+        {% if item.location and item.location != '' %}
+          <p class="muted m-0 mt-2">{{ item.dates }} · {{ item.location }}</p>
+        {% else %}
+          <p class="muted m-0 mt-2">{{ item.dates }}</p>
+        {% endif %}
+      {% else %}
+        {% if item.location and item.location != '' %}
+          <p class="muted m-0 mt-2">{{ item.location }}</p>
+        {% endif %}
       {% endif %}
 
       {% if item.bullets %}
