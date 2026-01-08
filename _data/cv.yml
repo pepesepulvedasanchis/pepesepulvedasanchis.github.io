@@ -256,6 +256,15 @@ sections:
     title: "Habilidades"
     description: "Capacidades clave."
     items:
+
+      - title: "Datos e IA"
+        subtitle: ""
+        dates: ""
+        location: ""
+        icon: "brain"
+        description: "Casos de uso (incl. IA generativa), adopción responsable, medición de impacto y automatización."
+        bullets: []
+    
       - title: "Estrategia y transformación"
         subtitle: ""
         dates: ""
@@ -270,14 +279,6 @@ sections:
         location: ""
         icon: "sitemap"
         description: "Diseño end-to-end, integraciones, escalabilidad y operación."
-        bullets: []
-
-      - title: "Datos e IA"
-        subtitle: ""
-        dates: ""
-        location: ""
-        icon: "brain"
-        description: "Casos de uso (incl. IA generativa), adopción responsable, medición de impacto y automatización."
         bullets: []
 
       - title: "Producto y delivery"
@@ -313,7 +314,7 @@ sections:
         dates: ""
         location: ""
         icon: "comment"
-        description: "Avanzado / Profesional"
+        description: "Nativo"
         bullets: []
 
       - title: "Italiano"
