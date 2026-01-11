@@ -7,7 +7,7 @@ description:  "Innovación Tecnológica y Rediseño Urbano: La Clave para la Mov
 cta_heading: "Interested in seeing what I build next?"
 slug: "Tecnología y Rediseño Urbano"
 thumbnail: ck-thumbnail.jpg
-social_share: culture-kings.jpg
+social_share: urban.jpg
 credits:
   description: Agradecimientos a Diario Responsable, Carol Rodriguez y Clara Felis.
 ---
