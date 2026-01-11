@@ -96,7 +96,7 @@ sections:
         subtitle: ""
         dates: ""
         location: ""
-        icon: "badge-check"
+        thumbnail: "/assets/img/cv/UVan.svg"
         description: "Vanderbilt University"
         bullets: []
 
@@ -104,7 +104,7 @@ sections:
         subtitle: ""
         dates: ""
         location: ""
-        icon: "badge-check"
+        thumbnail: "/assets/img/cv/UVan.svg"
         description: "Vanderbilt University"
         bullets: []
 
@@ -112,7 +112,7 @@ sections:
         subtitle: ""
         dates: ""
         location: ""
-        icon: "badge-check"
+        thumbnail: "/assets/img/cv/UVan.svg"
         description: "Vanderbilt University"
         bullets: []
 
@@ -120,7 +120,7 @@ sections:
         subtitle: ""
         dates: ""
         location: ""
-        icon: "badge-check"
+        thumbnail: "/assets/img/cv/UVan.svg"
         description: "Vanderbilt University"
         bullets: []
 
@@ -128,7 +128,7 @@ sections:
         subtitle: ""
         dates: ""
         location: ""
-        icon: "badge-check"
+        thumbnail: "/assets/img/cv/IBM.png"
         description: "IBM"
         bullets: []
 
@@ -136,7 +136,7 @@ sections:
         subtitle: ""
         dates: ""
         location: ""
-        icon: "badge-check"
+        thumbnail: "/assets/img/cv/IBM.png"
         description: "IBM"
         bullets: []
 
@@ -148,7 +148,7 @@ sections:
         subtitle: "Vicerrector de Tecnología y Transformación Digital"
         dates: "2023 – Actualidad"
         location: "Valencia (España)"
-        icon: "building-columns"
+        thumbnail: "/assets/img/cv/VIU.jpg"
         description: ""
         bullets:
           - "Liderazgo de tecnología aplicada a enseñanza y aprendizaje (gestión, estrategia, desarrollo y despliegue)."
@@ -162,7 +162,7 @@ sections:
         subtitle: "Director"
         dates: "2018 – 2023"
         location: "Valencia (España)"
-        icon: "briefcase"
+        thumbnail: "/assets/img/cv/I2CV.png"
         description: ""
         bullets:
           - "Iniciativa del Sistema de Gestión de Datos de la Comunitat Valenciana (SGD)."
@@ -176,7 +176,7 @@ sections:
         subtitle: "Centre Director (Founder)"
         dates: "2013 – 2018"
         location: "Singapur"
-        icon: "diagram-project"
+        thumbnail: "/assets/img/cv/SP.jpg"
         description: ""
         bullets:
           - "Obtención de financiación pública y privada; dirección de un equipo de 15–20 investigadores."
@@ -189,7 +189,7 @@ sections:
         subtitle: "Senior Manager – Head of ICT Group"
         dates: "2011 – 2013"
         location: "Singapur"
-        icon: "handshake"
+        thumbnail: "/assets/img/cv/NUS.png"
         description: ""
         bullets:
           - "Gestión de propiedad intelectual, patentes, licencias y acuerdos de comercialización."
@@ -201,12 +201,12 @@ sections:
         subtitle: "Investigación aplicada, docencia y proyectos internacionales"
         dates: "1999 – 2011"
         location: "Europa / Asia / EE. UU."
-        icon: "globe"
+        thumbnail: "/assets/img/cv/globe.png"
         description: ""
         bullets:
-          - "Research Fellow en NUS (IDMI/Keio-NUS CUTE Center): HCI, physical computing, data analysis y computer vision."
+          - "Research and Consultancy (Baylor College of Medicine, Rice University, Karolinska Institutet), Bioinformatics, HCI, physical computing, data analysis y computer vision."
           - "Marie Curie Fellow (Italia/Alemania) y Visiting Researcher en Fraunhofer IGD (Alemania)."
-          - "Docencia universitaria en ingeniería electrónica (Universidad de Valencia)."
+          - "Docencia universitaria en (Universidad de Valencia, Cork Institute of Technology, Karolinska Institutet)."
 
   - id: "proyectos"
     title: "Proyectos seleccionados"
@@ -314,7 +314,7 @@ sections:
         dates: ""
         location: ""
         icon: "comment"
-        description: "Nativo"
+        description: "Bilingüe"
         bullets: []
 
       - title: "Italiano"
