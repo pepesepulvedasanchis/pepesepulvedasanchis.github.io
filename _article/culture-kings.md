@@ -1,11 +1,11 @@
 ---
-title: "Culture Kings Double or Nothing"
+title: "Innovación Tecnológica y Rediseño Urbano: La Clave para la Movilidad Sostenible en las Ciudades del Futuro"
 layout: "article"
-date: 2025-12-29T08:30:00
+date: 2024-07-09T08:30:00
 draft: false
-description: "How we built a high stakes basketball challenge in the heart of Las Vegas."
+description: "Artículo publicado en el Diario responsable."
 cta_heading: "Interested in seeing what I build next?"
-slug: "culture-kings"
+slug: "Tecnología y Rediseño Urbano"
 thumbnail: ck-thumbnail.jpg
 social_share: culture-kings.jpg
 credits:
@@ -57,26 +57,35 @@ credits:
 
 {% assign image_path = site.image_path | append: page.slug %}
 
-Before we even started working on the Culture Kings Black Friday Challenge, we joked that we would paint their store green. Fast forward a couple of months, and that’s exactly what we did.
+Artículo publicado en el diario responsable 09-07-24
+https://diarioresponsable.com/opinion/36984-innovacion-tecnologica-y-rediseno-urbano-la-clave-para-la-movilidad-sostenible-en-las-ciudades-del-futuro
 
-## Tech Flexes Team
+### Innovación Tecnológica y Rediseño Urbano: La Clave para la Movilidad Sostenible en las Ciudades del Futuro
+En la actualidad, la movilidad urbana se enfrenta a desafíos significativos: congestión, contaminación y un consumo energético insostenible. Sin embargo, estamos al borde de una transformación profunda, impulsada por la combinación de innovaciones tecnológicas y un rediseño urbano inteligente. Para rediseñar las ciudades del futuro, sostenibles, eficientes y habitables, debemos integrar estos dos enfoques de manera sistémica.
+#### La Intersección entre Tecnología y Sostenibilidad
+El avance tecnológico está revolucionando la movilidad urbana. Los vehículos autónomos, por ejemplo, prometen reducir los accidentes de tráfico y optimizar el flujo vehicular. Estos vehículos, equipados con sensores avanzados y sistemas de inteligencia artificial, pueden comunicarse entre sí y con la infraestructura urbana para mejorar la eficiencia del transporte.
 
-Earlier this year, after almost four years on the Retail Marketing team, I switched to a new R&D team called ‘Tech Flexes’. The team is uniquely positioned at the intersection of culture and commerce. We partner with some of the top brands and build custom shopping experiences that showcase the future of commerce. The ideas can be literally anything, but the only real requirements are that we use Shopify’s tools and developer platform, and then tell the world how we built it. We’re trying to get people excited about the future of commerce you can build with the right skills and tools.
+Además, los sistemas de transporte inteligentes están cambiando la manera en que gestionamos el tráfico. El uso de Big Data permite analizar patrones de tráfico en tiempo real, ayuda a las autoridades a tomar decisiones informadas y a los conductores a evitar congestiones. Las aplicaciones móviles que integran diferentes modos de transporte, desde bicicletas compartidas hasta autobuses y trenes, facilitan la planificación de viajes eficientes y sostenibles.
 
-The past couple of projects we’ve launched have done very well online—like the [Magic Mirror](https://x.com/nikodraca/status/1968042647039381556){:target="blank"} we built for Rare Beauty, which shade matched makeup at their L.A. popup in September, or ‘[Pay with Your Pace](https://shopify.engineering/how-we-built-a-gamified-treadmill){:target="blank"}’, a treadmill that printed store credit to celebrate marathon weekend in NYC.
+La electrificación del transporte también juega un papel crucial en la movilidad sostenible. Los autobuses y coches eléctricos, alimentados por energías renovables como la solar y la eólica, están reduciendo significativamente las emisiones de gases de efecto invernadero. Ciudades como Oslo y Copenhague están liderando este cambio, implementando amplias redes de estaciones de carga y promoviendo el uso de vehículos eléctricos a través de incentivos fiscales y restricciones a los vehículos de combustibles fósiles.
+#### Rediseño Urbano: Compacto y Eficiente
+No obstante, la tecnología por sí sola no puede resolver todos los problemas de movilidad. El diseño de nuestras ciudades debe evolucionar para apoyar y maximizar estos avances tecnológicos. Las ciudades compactas, donde las distancias entre hogares, trabajos, tiendas y servicios son cortas, facilitan el uso del transporte público, la bicicleta y los desplazamientos a pie.
 
-For our next build, we wanted to take the pre-existing Sharpshooter challenge that Culture Kings already had in-store and give it a twist by integrating it directly into their point of sale.
+La creación de zonas peatonales y ciclovías es esencial. Estas áreas no solo reducen la dependencia del automóvil, sino que también mejoran la calidad del aire y fomentan un estilo de vida más saludable. Copenhague, por ejemplo, ha implementado extensas redes de ciclovías que han convertido a la bicicleta en el principal medio de transporte para muchos de sus residentes.
 
-## Building the game
+Asimismo, los espacios verdes y los corredores ecológicos deben integrarse en el diseño urbano. Estos espacios no solo proporcionan áreas de recreación y bienestar para los ciudadanos, sino que también actúan como sumideros de carbono y hábitats para la biodiversidad. Curitiba es un modelo de cómo el diseño urbano puede integrarse con la sostenibilidad ambiental, con su sistema de autobuses rápidos y sus numerosos parques y áreas verdes.
+#### Sinergia entre Tecnología y Rediseño Urbano
+La verdadera clave para una movilidad sostenible en las ciudades del futuro reside en la sinergia entre la tecnología y el rediseño urbano. La planificación integrada es fundamental. Los sensores y dispositivos del Internet de las Cosas (IoT) pueden monitorizar en tiempo real el flujo de tráfico, la calidad del aire y otros parámetros críticos, proporcionando datos valiosos para la toma de decisiones urbanas.
 
-At the Las Vegas Culture Kings store, customers can collect a token for every $50 they spend in-store, and after collecting 10 tokens, can use them on the Sharpshooter challenge. The current challenge is simple: you have to make 10 consecutive shots to claim exclusive merchandise. But we wanted a special Black Friday version. In true Vegas fashion, we created a ‘Double or Nothing’ challenge that allowed the customer to risk their winnings to double their in-store credit, up to $1,024. Also, the game was typically run solely by store staff without any integration with their POS and no way to reliably identify these customers for future engagement—and that’s where we came in.
+Las plataformas de Movilidad como Servicio (MaaS) consolidan diferentes modos de transporte en una sola aplicación, facilitando la transición entre caminar, ir en bicicleta, coger el autobús o el metro. Este enfoque integrado mejora la eficiencia y la conveniencia del transporte público, reduciendo la necesidad de vehículos privados y aliviando la congestión.
 
-Culture Kings wanted to reserve the game for customers who spent $200 in-store, so we built a [POS UI extension](https://shopify.dev/docs/api/pos-ui-extensions/latest){:target="blank"} that generated a wallet pass using [Badge.dev](https://www.badge.dev/){:target="blank"} after a customer made a qualifying purchase. The extension presented a unique QR code that the customer would scan to get their wallet pass for the experience. We also built a control panel for staff on the floor to control the game mechanics. This included a code scanner, so when a customer presented their wallet pass, it would pull their data, activate the scoreboard, and the game would start.
+Sin embargo, implementar estas estrategias presenta desafíos. La modernización de la infraestructura existente requiere inversiones significativas. Los costos iniciales pueden ser elevados, pero los beneficios a largo plazo en términos de reducción de emisiones, ahorro energético y mejora de la calidad de vida justifican estos gastos. La colaboración entre el sector público y el privado, junto con modelos de financiación innovadores, puede ayudar a superar estas barreras.
+#### Desafíos y Soluciones
+La transición hacia una movilidad sostenible se enfrenta a un importante obstáculo: la inercia. No es solo una cuestión de rediseño urbano o innovación tecnológica, sino la resistencia al cambio tanto por parte de la ciudadanía como de los líderes políticos. Esta resistencia se manifiesta en la reticencia de las personas a modificar sus hábitos de transporte y en la falta de voluntad política para implementar las medidas necesarias.
 
-{% include gallery.html path=image_path slug='ck-controlpanel' format='jpg' count=3 %}
+Las ciudades deben superar esta inercia adoptando marcos normativos que promuevan el uso de tecnologías limpias y un diseño urbano sostenible. Sin embargo, esto requiere un liderazgo audaz y decidido que esté dispuesto a desafiar el status quo. La participación ciudadana es igualmente crucial; involucrar a los residentes en el proceso de planificación y toma de decisiones es vital para asegurar que las soluciones sean aceptadas y efectivas.
 
-Once a game started, the customer’s name would flash on the large scoreboards, while a Culture Kings staff member grabbed the mic to MC the event and invited everyone in the store to gather around and watch the challenge. Each participant got a few practice shots, and once they made their first basket, they won $4. At that point, they could choose to walk away and keep their credit, or risk it all for a chance to double it. Most of the time, customers chose to go for double.
-
+En resumen, la verdadera barrera no es la falta de tecnología ni de ideas para el rediseño urbano, sino la inercia que impide a la sociedad moverse y a los políticos liderar el cambio. Superar esta inercia requiere colaboración entre gobiernos, empresas y ciudadanos para crear un entorno urbano que sea tanto eficiente como tecnológicamente avanzado y sostenible. Solo así podremos construir ciudades del futuro que no solo transformen el transporte, sino también la manera en que vivimos y nos movemos, enriqueciendo nuestras vidas y preservando nuestro planeta.
 {% include gallery.html path=image_path slug='ck-firstbasket' format='mp4' count=1 %}
 
 The two game boards were a single responsive webview powered by [Remix](https://remix.run/){:target="blank"} that was listening to websocket events sent from the control panel via [Socket.io](http://Socket.io){:target="blank"}, and additionally stored in the [Shopify Order Metafields](https://help.shopify.com/en/manual/shopify-flow/reference/actions/update-order-metafield){:target="blank"}. Utilizing the Shopify Order Metafields was an easy way to avoid requiring a separate database for each game and allowed us to use only the dev tools available from Shopify.
