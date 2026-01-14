@@ -6,7 +6,7 @@ draft: false
 description:  "Innovación Tecnológica y Rediseño Urbano: La Clave para la Movilidad Sostenible en las Ciudades del Futuro"
 cta_heading: "Interested in seeing what I build next?"
 slug: "Tecnología y Rediseño Urbano"
-thumbnail: ck-thumbnail.jpg
+thumbnail: urban.jpg
 social_share: urban.jpg
 credits:
   description: Agradecimientos a Diario Responsable, Carol Rodriguez y Clara Felis.
