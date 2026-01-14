@@ -5,9 +5,9 @@ date: 2024-07-09T08:30:00
 draft: false
 description: "Innovación Tecnológica y Rediseño Urbano: La Clave para la Movilidad Sostenible en las Ciudades del Futuro"
 cta_heading: "Interested in seeing what I build next?"
-slug: "innovacion-tecnologica-rediseno-urbano"
-thumbnail: "/assets/articles/culture-kings/urban.jpg"
-social_share: "/assets/articles/culture-kings/urban.jpg"
+slug: "movilidad"
+thumbnail: "urban.jpg"
+social_share: "urban.jpg"
 credits:
   description: "Agradecimientos a Diario Responsable, Carol Rodriguez y Clara Felis."
 ---
@@ -23,7 +23,7 @@ credits:
 
 <div class="section mt-8">
   <img
-    src="/assets/articles/culture-kings/urban.jpg"
+    src="{{ site.image_path }}{{ page.slug }}/{{ page.thumbnail }}"
     alt="Innovación Tecnológica y Rediseño Urbano"
     loading="lazy"
     style="display:block; width:100%; height:auto; border-radius:16px;"
