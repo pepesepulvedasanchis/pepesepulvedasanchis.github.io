@@ -8,16 +8,27 @@ cta_heading: "Interested in seeing what I build next?"
 slug: "innovacion-tecnologica-rediseno-urbano"
 thumbnail: "/assets/articles/culture-kings/urban.jpg"
 social_share: "/assets/articles/culture-kings/urban.jpg"
+credits:
+  description: "Agradecimientos a Diario Responsable, Carol Rodriguez y Clara Felis."
 ---
 
 <p class="muted">
   Artículo publicado en Diario Responsable (09-07-2024).<br />
-  <a href="https://diarioresponsable.com/opinion/36984-innovacion-tecnologica-y-rediseno-urbano-la-clave-para-la-movilidad-sostenible-en-las-ciudades-del-futuro" target="_blank" rel="noopener nofollow">
+  <a href="https://diarioresponsable.com/opinion/36984-innovacion-tecnologica-y-rediseno-urbano-la-clave-para-la-movilidad-sostenible-en-las-ciudades-del-futuro"
+     target="_blank"
+     rel="noopener nofollow">
     Leer en Diario Responsable
   </a>
 </p>
 
-{% include image.html path="/assets/articles/culture-kings/urban.jpg" alt="Innovación Tecnológica y Rediseño Urbano" %}
+<div class="section mt-8">
+  <img
+    src="/assets/articles/culture-kings/urban.jpg"
+    alt="Innovación Tecnológica y Rediseño Urbano"
+    loading="lazy"
+    style="display:block; width:100%; height:auto; border-radius:16px;"
+  />
+</div>
 
 ### Innovación Tecnológica y Rediseño Urbano: La Clave para la Movilidad Sostenible en las Ciudades del Futuro
 
