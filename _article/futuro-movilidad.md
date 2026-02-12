@@ -1,9 +1,9 @@
 ---
-title: "Movilidad sostenible: el factor humano"
+title: "El mayor impedimento a la transformación de la movilidad no es tecnológico sino humano"
 layout: "article"
 date: 2024-03-04T08:30:00
 draft: false
-description: "El mayor impedimento a la transformación de la movilidad no es tecnológico sino humano."
+description: "Movilidad sostenible: el factor humano"
 cta_heading: "Interested in seeing what I build next?"
 slug: "futuro-movilidad"
 thumbnail: "hero.jpg"
