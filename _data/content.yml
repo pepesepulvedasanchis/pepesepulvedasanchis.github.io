@@ -25,11 +25,11 @@ homepage:
       - title: Inteligencia Artificial para Abogados
         description: IA para Abogados es un espacio de formación y reflexión en torno a la Inteligencia Artificial aplicada a la profesión legal. Descarga el libro de forma gratuita.
         external: false
-        url: /projects/ai-para-abogados
+        url: /projects/ai-para-abogados/index.md
       - title: Inteligencia Artificial para Periodistas
         description: IA para Periodistas y Comunicadores es un espacio de formación y reflexión en torno a la Inteligencia Artificial aplicada al periodismo y la comunicación. Descarga el libro de forma gratuita.
         external: false
-        url: /projects/ia-para-periodistas/
+        url: /projects/ia-para-periodistas/index.md
 
   projects:
     title: Creative works
