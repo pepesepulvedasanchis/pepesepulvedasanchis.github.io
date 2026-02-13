@@ -22,7 +22,7 @@ cta_heading: Mantente en contacto
     <div class="card rounded">
       <div class="details">
         <div class="thumbnail thumbnail__small icon">
-          <i class="far fa-user" aria-hidden="true"></i>
+          <i class="far fa-tag" aria-hidden="true"></i>
         </div>
 
         <div class="info">
@@ -54,7 +54,7 @@ cta_heading: Mantente en contacto
       <div class="card rounded">
         <div class="details">
           <div class="thumbnail thumbnail__small icon">
-            <i class="far fa-book" aria-hidden="true"></i>
+            <i class="far fa-file" aria-hidden="true"></i>
           </div>
           <div class="info">
             <p class="title m-0 mb-1"><strong>Capítulo 1: Introducción</strong></p>
@@ -69,7 +69,7 @@ cta_heading: Mantente en contacto
       <div class="card rounded">
         <div class="details">
           <div class="thumbnail thumbnail__small icon">
-            <i class="far fa-comment" aria-hidden="true"></i>
+            <i class="far fa-box-open" aria-hidden="true"></i>
           </div>
           <div class="info">
             <p class="title m-0 mb-1"><strong>Capítulo 2: La IA en el Derecho</strong></p>
@@ -99,7 +99,7 @@ cta_heading: Mantente en contacto
       <div class="card rounded">
         <div class="details">
           <div class="thumbnail thumbnail__small icon">
-            <i class="far fa-brain" aria-hidden="true"></i>
+            <i class="far fa-trees" aria-hidden="true"></i>
           </div>
           <div class="info">
             <p class="title m-0 mb-1"><strong>Capítulo 4: Escenarios y Debates</strong></p>
@@ -118,7 +118,7 @@ cta_heading: Mantente en contacto
     <div class="card rounded">
       <div class="details">
         <div class="thumbnail thumbnail__small icon">
-          <i class="far fa-fire" aria-hidden="true"></i>
+          <i class="far fa-arrow-right" aria-hidden="true"></i>
         </div>
 
         <div class="info">
@@ -133,7 +133,6 @@ cta_heading: Mantente en contacto
             Descárgalo ahora y comienza a construir tu futuro profesional con las herramientas del mañana.
           </p>
 
-          <!-- En el siguiente paso pondremos aquí el link real de descarga -->
           <a href="#" class="btn btn__basic mt-6">Descargar el libro</a>
         </div>
       </div>
