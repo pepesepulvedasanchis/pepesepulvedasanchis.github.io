@@ -22,7 +22,7 @@ cta_heading: Mantente en contacto
     <div class="card rounded">
       <div class="details">
         <div class="thumbnail thumbnail__small icon">
-          <i class="far fa-scale-balanced" aria-hidden="true"></i>
+          <i class="fas fa-balance-scale" aria-hidden="true"></i>
         </div>
 
         <div class="info">
@@ -54,7 +54,7 @@ cta_heading: Mantente en contacto
       <div class="card rounded">
         <div class="details">
           <div class="thumbnail thumbnail__small icon">
-            <i class="far fa-book-open" aria-hidden="true"></i>
+            <i class="fas fa-book" aria-hidden="true"></i>
           </div>
           <div class="info">
             <p class="title m-0 mb-1"><strong>Capítulo 1: Introducción</strong></p>
@@ -69,7 +69,7 @@ cta_heading: Mantente en contacto
       <div class="card rounded">
         <div class="details">
           <div class="thumbnail thumbnail__small icon">
-            <i class="far fa-gavel" aria-hidden="true"></i>
+            <i class="fas fa-gavel" aria-hidden="true"></i>
           </div>
           <div class="info">
             <p class="title m-0 mb-1"><strong>Capítulo 2: La IA en el Derecho</strong></p>
@@ -84,7 +84,7 @@ cta_heading: Mantente en contacto
       <div class="card rounded">
         <div class="details">
           <div class="thumbnail thumbnail__small icon">
-            <i class="far fa-wand-magic-sparkles" aria-hidden="true"></i>
+            <i class="fas fa-magic" aria-hidden="true"></i>
           </div>
           <div class="info">
             <p class="title m-0 mb-1"><strong>Capítulo 3: Patrones de instrucciones (Prompts)</strong></p>
@@ -99,7 +99,7 @@ cta_heading: Mantente en contacto
       <div class="card rounded">
         <div class="details">
           <div class="thumbnail thumbnail__small icon">
-            <i class="far fa-diagram-project" aria-hidden="true"></i>
+            <i class="fas fa-project-diagram" aria-hidden="true"></i>
           </div>
           <div class="info">
             <p class="title m-0 mb-1"><strong>Capítulo 4: Escenarios y Debates</strong></p>
@@ -118,7 +118,7 @@ cta_heading: Mantente en contacto
     <div class="card rounded">
       <div class="details">
         <div class="thumbnail thumbnail__small icon">
-          <i class="far fa-download" aria-hidden="true"></i>
+          <i class="fas fa-download" aria-hidden="true"></i>
         </div>
 
         <div class="info">
