@@ -1,7 +1,6 @@
 ---
 layout: default
 title: IA para Abogados
-slug: ia-para-abogados
 permalink: /projects/ia-para-abogados/
 cta_heading: Mantente en contacto
 ---
@@ -105,7 +104,7 @@ cta_heading: Mantente en contacto
             <p class="title m-0 mb-1"><strong>Capítulo 4: Escenarios y Debates</strong></p>
             <p class="muted m-0">
               Reflexión sobre el futuro sistémico del Derecho: erosión del consenso jurídico, mutación del precedente,
-              evidencia sintética y disputas algorítmicas. Prepara para desafíos estructurales del sistema legal en transición.
+              evidencia sintética y debates algorítmicos. Prepara para desafíos estructurales del sistema legal en transición.
             </p>
           </div>
         </div>
@@ -133,7 +132,6 @@ cta_heading: Mantente en contacto
             Descárgalo ahora y comienza a construir tu futuro profesional con las herramientas del mañana.
           </p>
 
-          <!-- En el siguiente paso pondremos aquí el link real de descarga -->
           <a href="#" class="btn btn__basic mt-6">Descargar el libro</a>
         </div>
       </div>
@@ -143,4 +141,3 @@ cta_heading: Mantente en contacto
 </div>
 
 {% include newsletter.html %}
- 
