@@ -6,8 +6,8 @@ draft: false
 description: "La Comunidad Valenciana ante el reto de la reindustrialización"
 cta_heading: "Interested in seeing what I build next?"
 slug: "tecnologia-futuro"
-thumbnail: "hero.jpg"
-social_share: "hero.jpg"
+thumbnail: "reindustrializacion.jpg"
+social_share: "reindustrializacion.jpg"
 source_url: "https://www.larazon.es/economia/tecnologia-pide-permiso-futuro-espera_20250427680dac05319ae75da4b94f1e.html"
 ---
 
