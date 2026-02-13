@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: IA para Abogados
