@@ -1,25 +1,20 @@
 links:
-  - title: Culture Kings Double or Nothing
-    article: "culture-kings"
-  - title: hold out hope
-    description: My latest COVEO single is now available worldwide!
-    thumbnail: https://coveomusic.com/assets/releases/hold-out-hope/hold-out-hope-140.jpg
-    url: https://coveomusic.com/hold-out-hope
-    external: true
-  - title: hold out hope - music video
-    description: I shot and edited a music video for my latest COVEO single.
-    thumbnail: https://i.ytimg.com/vi/sptjtC5UYQo/maxresdefault.jpg?v=68c9d4ec
-    url: https://youtu.be/sptjtC5UYQo?list=RDsptjtC5UYQo
-    external: true
-  - title: Rate My Fit
-    description: We built a mini app in the Shop app that allows you to rate a photo of your outfit.
-    url: https://shop.app/ratemyfit
-    icon: fire
-    external: true
-  - title: Our wedding
-    article: "wedding"
-  - title: Bo & Co Studio
-    description: I'm building a creative studio on the side as a means to keep my creative skills sharp.
-    url: https://boandco.studio?ref=connellmccarthy.com&linktree
-    thumbnail: https://pbs.twimg.com/profile_images/1622372549039460352/7w5Ro4Ti_400x400.jpg
+  - title: "La tecnología no pide permiso, y el futuro no espera"
+    article: "tecnologia-futuro"
+
+  - title: "Innovación tecnológica y rediseño urbano"
+    article: "movilidad"
+
+  - title: "Movilidad sostenible: el factor humano"
+    article: "futuro-movilidad"
+
+  - title: "IA para abogados"
+    description: "Proyecto sobre inteligencia artificial aplicada al sector jurídico."
+    url: /projects/ia-para-abogados/
+    icon: scale-balanced
+
+  - title: "LinkedIn"
+    description: "Actualizaciones profesionales, artículos y reflexiones sobre transformación digital, IA e innovación."
+    url: "https://www.linkedin.com/in/pepesepulveda/"
+    icon: linkedin
     external: true
