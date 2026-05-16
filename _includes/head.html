@@ -6,16 +6,20 @@
 <meta name="twitter:title" content="{{ site.title }} - {{ page.title }}" />
 <meta name="author" content="{{ site.title }}" />
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+
 {% if page.description %}
 <meta name="description" content="{{ page.description }}" />
 <meta name="twitter:description" content="{{ page.description }}" />
-{% elsif page.body_html %} {% assign description = page.body_html | strip_html | truncate: 125 %}
+{% elsif page.body_html %}
+{% assign description = page.body_html | strip_html | truncate: 125 %}
 <meta name="description" content="{{ description }}" />
 <meta name="twitter:description" content="{{ description }}" />
 {% else %}
 <meta name="description" content="{{ site.description }}" />
 <meta name="twitter:description" content="{{ site.description }}" />
-{% endif %} {% if page.layout == 'article' %}
+{% endif %}
+
+{% if page.layout == 'article' %}
 <meta name="image" content="{{ site.url }}/assets/img/social-share/{{ page.slug }}.jpg" />
 <meta property="og:image" content="{{ site.url }}/assets/img/social-share/{{ page.slug }}.jpg" />
 <meta name="twitter:image" content="{{ site.url }}/assets/img/social-share/{{ page.slug }}.jpg" />
@@ -28,6 +32,7 @@
 <meta property="og:image" content="{{ site.url }}/assets/img/social-share.jpg" />
 <meta name="twitter:image" content="{{ site.url }}/assets/img/social-share.jpg" />
 {% endif %}
+
 <meta name="twitter:site" content="@{{ site.twitter_username }}" />
 <meta name="twitter:card" content="summary_large_image" />
 
@@ -42,7 +47,11 @@
 
 <link rel="stylesheet" href="/assets/css/aos.css" />
 <link rel="stylesheet" href="/assets/css/main.css" />
-<script src="https://kit.fontawesome.com/be9fc87a0c.js" crossorigin="anonymous"></script>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
 
 <script src="https://unpkg.com/swup@3"></script>
 <script src="/assets/js/swup-slide.min.js"></script>
@@ -56,11 +65,12 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVY559Y564"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
+
   function gtag() {
     dataLayer.push(arguments);
   }
-  gtag("js", new Date());
 
+  gtag("js", new Date());
   gtag("config", "G-GVY559Y564");
 </script>
 {% endif %}
