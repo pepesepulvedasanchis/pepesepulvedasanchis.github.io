@@ -15,35 +15,17 @@ main:
       icon: book
       url: /article/
 
-    # Kept for future use; hidden automatically when shop_enabled: false
-    - title: Proyectos
-      slug: prints
-      icon: camera-retro
-      url: /prints/
-
-    # Now points to your new internal CV page
     - title: CV
       slug: cv
       icon: user
       url: /cv/
 
 footer:
-  - title: Historial de cambios
-    url: /changelog/
-
   - title: Reportar un issue
     url: https://github.com/pepesepulvedasanchis/pepesepulvedasanchis.github.io/issues/new
-
-  # Kept for future use; hidden automatically when shop_enabled: false
-  - title: Environmental Impact Promise
-    url: /prints/pages/environmental-impact-promise
 
   - title: Términos y condiciones
     url: /legal/terms
 
   - title: Política de privacidad
     url: /legal/privacy
-
-  # Kept for future use; hidden automatically when shop_enabled: false
-  - title: Política de devoluciones
-    url: /legal/returns
