@@ -12,9 +12,11 @@ links:
     description: "Proyecto sobre inteligencia artificial aplicada al sector jurídico."
     url: /projects/ia-para-abogados/
     icon: scale-balanced
+    icon_style: fas
 
   - title: "LinkedIn"
     description: "Actualizaciones profesionales, artículos y reflexiones sobre transformación digital, IA e innovación."
-    url: "https://www.linkedin.com/in/josesepulvedaphd/"
-    icon: arrow-up-right-from-square
+    url: "https://www.linkedin.com/in/pepesepulveda/"
+    icon: linkedin
+    icon_style: fab
     external: true
