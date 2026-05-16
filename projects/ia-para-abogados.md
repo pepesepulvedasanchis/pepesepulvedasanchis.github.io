@@ -18,6 +18,34 @@ cta_heading: Mantente en contacto
     Introducción a la Inteligencia Artificial para Abogados: la guía para la transformación legal.
   </p>
 
+  <div class="section mt-8" data-aos="fade">
+    <div class="card rounded">
+      <div class="details">
+        <div class="thumbnail thumbnail__small icon">
+          <img src="/assets/icons/projects/download.svg" alt="" width="28" height="28" style="display:block;" />
+        </div>
+
+        <div class="info">
+          <p class="title m-0 mb-1"><strong>Descarga el libro</strong></p>
+
+          <p class="muted m-0">
+            Descarga el PDF de "Introducción a la Inteligencia Artificial para Abogados" y empieza a aplicar la IA con criterio profesional,
+            entendiendo tanto sus posibilidades como sus límites.
+          </p>
+
+          <a
+            href="/assets/downloads/ia-para-abogados.pdf"
+            class="btn btn__basic mt-6"
+            download
+            type="application/pdf"
+          >
+            Descargar IA para Abogados
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="section mt-12" data-aos="fade">
     <div class="card rounded">
       <div class="details">
@@ -59,8 +87,8 @@ cta_heading: Mantente en contacto
           <div class="info">
             <p class="title m-0 mb-1"><strong>Capítulo 1: Introducción</strong></p>
             <p class="muted m-0">
-              Contexto e historia de la IA (años 40 hasta hoy). Explica cómo funcionan los LLMs y la arquitectura Transformer,
-              aterrizando capacidades, limitaciones y riesgos para el ejercicio jurídico.
+              Contexto e historia de la IA, desde sus orígenes hasta la IA generativa actual. Explica cómo funcionan los modelos de lenguaje,
+              qué pueden hacer, dónde fallan y qué debe entender un profesional jurídico antes de incorporarlos a su trabajo.
             </p>
           </div>
         </div>
@@ -74,8 +102,8 @@ cta_heading: Mantente en contacto
           <div class="info">
             <p class="title m-0 mb-1"><strong>Capítulo 2: La IA en el Derecho</strong></p>
             <p class="muted m-0">
-              Impacto directo en la práctica: investigación jurídica, redacción de contratos y gestión de clientes.
-              Aborda ética, responsabilidad profesional (alucinaciones) y sesgos, y los nuevos roles híbridos del abogado.
+              Impacto directo en la práctica jurídica: investigación legal, redacción de contratos, gestión documental,
+              atención al cliente, ética profesional, alucinaciones, sesgos y responsabilidad.
             </p>
           </div>
         </div>
@@ -87,10 +115,10 @@ cta_heading: Mantente en contacto
             <img src="/assets/icons/projects/cap.svg" alt="" width="28" height="28" style="display:block;" />
           </div>
           <div class="info">
-            <p class="title m-0 mb-1"><strong>Capítulo 3: Patrones de instrucciones (Prompts)</strong></p>
+            <p class="title m-0 mb-1"><strong>Capítulo 3: Patrones de instrucciones</strong></p>
             <p class="muted m-0">
-              Núcleo operativo del libro: biblioteca práctica de patrones (Persona, Cadena de Pensamiento, Verificador Cognitivo…)
-              para investigación, estrategia procesal, redacción y revisión documental.
+              Biblioteca práctica de patrones de prompts para investigación, estrategia procesal, redacción, revisión documental,
+              análisis de argumentos y trabajo jurídico asistido por IA.
             </p>
           </div>
         </div>
@@ -102,40 +130,15 @@ cta_heading: Mantente en contacto
             <img src="/assets/icons/projects/cap.svg" alt="" width="28" height="28" style="display:block;" />
           </div>
           <div class="info">
-            <p class="title m-0 mb-1"><strong>Capítulo 4: Escenarios y Debates</strong></p>
+            <p class="title m-0 mb-1"><strong>Capítulo 4: Escenarios y debates</strong></p>
             <p class="muted m-0">
-              Reflexión sobre el futuro sistémico del Derecho: erosión del consenso jurídico, mutación del precedente,
-              evidencia sintética y disputas algorítmicas. Prepara para desafíos estructurales del sistema legal en transición.
+              Reflexión sobre el futuro del Derecho en un entorno de sistemas inteligentes, evidencia sintética,
+              disputas algorítmicas, transformación del precedente y nuevos perfiles profesionales.
             </p>
           </div>
         </div>
       </div>
 
-    </div>
-  </div>
-
-  <div class="section mt-12" data-aos="fade">
-    <div class="card rounded">
-      <div class="details">
-        <div class="thumbnail thumbnail__small icon">
-          <img src="/assets/icons/projects/download.svg" alt="" width="28" height="28" style="display:block;" />
-        </div>
-
-        <div class="info">
-          <p class="title m-0 mb-1"><strong>Descarga</strong></p>
-
-          <p class="muted m-0">
-            Este libro es una invitación a dejar de ser un espectador pasivo para convertirse en protagonista de la transformación legal.
-            La IA no sustituye el juicio humano, lo amplifica; y esta obra entrega las llaves para liderar ese cambio.
-          </p>
-
-          <p class="muted m-0 mt-3">
-            Descárgalo ahora y comienza a construir tu futuro profesional con las herramientas del mañana.
-          </p>
-
-          <a href="#" class="btn btn__basic mt-6">Descargar el libro</a>
-        </div>
-      </div>
     </div>
   </div>
 
