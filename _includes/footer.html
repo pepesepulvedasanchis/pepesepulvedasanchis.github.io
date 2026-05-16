@@ -1,27 +1,39 @@
 <footer class="footer">
   <div class="footer__contents">
     <div class="wrapper condensed">
-      <ul class="socials">
-        {% for network in site.data.content.socials %}
-          <li>
-            <a class="btn btn__link" href="{{ network.url }}" target="_blank" rel="noopener nofollow">
-              <span class="visually-hidden">{{ network.name }}</span>
-              <i class="fab fa-{{ network.icon }}" aria-hidden="true"></i>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
+      {% if site.data.content.socials %}
+        <ul class="socials">
+          {% for network in site.data.content.socials %}
+            <li>
+              <a
+                class="btn btn__link"
+                href="{{ network.url }}"
+                target="_blank"
+                rel="noopener nofollow"
+                aria-label="{{ network.name }}"
+              >
+                <span class="visually-hidden">{{ network.name }}</span>
+                <i class="fab fa-{{ network.icon }}" aria-hidden="true"></i>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
 
       {%- comment -%}
-        Count how many footer links are visible (so separators render correctly)
+        Count how many footer links are visible so separators render correctly.
+        Shop-related links stay hidden while shop_enabled is false.
       {%- endcomment -%}
       {% assign visible_total = 0 %}
+
       {% for link in site.data.linklists.footer %}
         {% assign hide_link = false %}
+
         {% if site.shop_enabled == false %}
           {% if link.url contains '/prints/' %}
             {% assign hide_link = true %}
           {% endif %}
+
           {% if link.url == '/legal/returns' or link.url == '/legal/returns/' %}
             {% assign hide_link = true %}
           {% endif %}
@@ -33,35 +45,49 @@
       {% endfor %}
 
       {% if visible_total > 0 %}
-      <div class="sitemap">
-        {% assign visible_index = 0 %}
-        {% for link in site.data.linklists.footer %}
-          {% assign hide_link = false %}
-          {% if site.shop_enabled == false %}
-            {% if link.url contains '/prints/' %}
-              {% assign hide_link = true %}
-            {% endif %}
-            {% if link.url == '/legal/returns' or link.url == '/legal/returns/' %}
-              {% assign hide_link = true %}
-            {% endif %}
-          {% endif %}
+        <nav class="sitemap" aria-label="Enlaces del pie de página">
+          {% assign visible_index = 0 %}
 
-          {% unless hide_link %}
-            {% assign visible_index = visible_index | plus: 1 %}
-            <a class="btn btn__link mt-4" href="{{ link.url }}" {% if link.url contains 'http://' or link.url contains 'https://' %}target="_blank"{% endif %}>
-              {{ link.title }}
-            </a>
-            {% if visible_index < visible_total %}
-              <span class="muted-light">•</span>
+          {% for link in site.data.linklists.footer %}
+            {% assign hide_link = false %}
+
+            {% if site.shop_enabled == false %}
+              {% if link.url contains '/prints/' %}
+                {% assign hide_link = true %}
+              {% endif %}
+
+              {% if link.url == '/legal/returns' or link.url == '/legal/returns/' %}
+                {% assign hide_link = true %}
+              {% endif %}
             {% endif %}
-          {% endunless %}
-        {% endfor %}
-      </div>
+
+            {% unless hide_link %}
+              {% assign visible_index = visible_index | plus: 1 %}
+
+              <a
+                class="btn btn__link mt-4"
+                href="{{ link.url }}"
+                {% if link.url contains 'http://' or link.url contains 'https://' %}
+                  target="_blank"
+                  rel="noopener"
+                {% endif %}
+              >
+                {{ link.title }}
+              </a>
+
+              {% if visible_index < visible_total %}
+                <span class="muted-light" aria-hidden="true">•</span>
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+        </nav>
       {% endif %}
     </div>
   </div>
 
-  <p class="copyright">© {{ 'now' | date: '%Y' }} Connell McCarthy</p>
+  <p class="copyright">
+    © {{ 'now' | date: '%Y' }} {{ site.title }}
+  </p>
 </footer>
 
 {% include scripts.html %}
