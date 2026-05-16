@@ -15,10 +15,32 @@
     margin: 2em auto;
     justify-content: center;
     align-items: center;
-
+  
     li {
       font-size: 1.2em;
       margin: 0 0.4em;
+    }
+  
+    a {
+      background: lighten($color-blue, 46);
+      color: $color-blue;
+      border-radius: 999px;
+      height: 42px;
+      width: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+  
+      &:hover,
+      &:focus {
+        background: $color-blue;
+        color: $color-white;
+        transform: translateY(-2px);
+      }
     }
   }
   a {
