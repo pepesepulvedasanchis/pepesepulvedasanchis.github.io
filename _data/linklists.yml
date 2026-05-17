@@ -7,7 +7,7 @@ main:
 
     - title: Novedades
       slug: new
-      icon: sparkles
+      icon: bolt
       url: /new/
 
     - title: Blog
