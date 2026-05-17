@@ -17,41 +17,40 @@ slug: articles
 
 <div class="wrapper">
   <div class="articles mt-6">
-    {% assign articles = site.article | sort: "date" | reverse | where:"draft",false %} {% for article in articles %}
-    {% assign article_words = article.content | strip_html | strip_newlines | downcase | replace: 'and','' | replace:
-    'the','' | split:' ' %} {% assign word_count = article_words | size %}
+    {% assign articles = site.article | sort: "date" | reverse | where:"draft",false %}
 
-    <div class="articles__item">
-      <a class="articles__item__thumb" href="{{ article.url }}">
-        <div class="article_thumbnail">
-          <img src="{{ site.image_path }}{{ article.slug }}/{{ article.thumbnail }}" />
+    {% for article in articles %}
+      {% assign article_words = article.content | strip_html | strip_newlines | downcase | replace: 'and','' | replace: 'the','' | split:' ' %}
+      {% assign word_count = article_words | size %}
+
+      <div class="articles__item">
+        <a class="articles__item__thumb" href="{{ article.url }}">
+          <div class="article_thumbnail">
+            <img src="{{ site.image_path }}{{ article.slug }}/{{ article.thumbnail }}" alt="{{ article.title }}" />
+          </div>
+        </a>
+
+        <div class="articles__item__info">
+          <p class="muted m-0">{{ article.title }}</p>
+          <p class="description m-0">{{ article.description }}</p>
+
+          <div class="article-info-details left">
+            <div class="article-details">
+              <p class="muted">Fecha de publicación</p>
+              <p>{{ article.date | date: "%d/%m/%Y" }}</p>
+            </div>
+
+            <div class="article-details">
+              <p class="muted">Tiempo de lectura</p>
+              <p>{{ word_count | times: 0.0076 | round }} minutos</p>
+            </div>
+          </div>
+
+          <a class="btn btn__dark btn__round btn__marketing" href="{{ article.url }}">
+            Leer artículo <i class="far fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
-      </a>
-      <div class="articles__item__info">
-        <p class="muted m-0">{{ article.title }}</p>
-        <p class="description m-0">{{ article.description }}</p>
-        <div class="article-info-details left">
-          <div class="article-details">
-            <p class="muted">Fecha de publicación</p>
-            <p>{{ article.date | date: "%b %d, %Y" }}</p>
-          </div>
-          <div class="article-details">
-            <p class="muted">Tiempo de lectura</p>
-            <p>{{ word_count | times: 0.0076 | round }} minutos</p>
-          </div>
-          <div class="article-details">
-            <p class="muted">Interacción</p>
-            <p>
-              <span class="count loading" data-id="{{ article.slug }}">{% include assets/icons/loading.html %}</span>
-              me gusta
-            </p>
-          </div>
-        </div>
-        <a class="btn btn__dark btn__round btn__marketing" href="{{ article.url }}"
-          >Leer artículo <i class="far fa-arrow-right" aria-hidden="true"></i
-        ></a>
       </div>
-    </div>
     {% endfor %}
   </div>
 </div>
