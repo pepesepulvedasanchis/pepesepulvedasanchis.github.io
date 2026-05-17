@@ -1,3 +1,5 @@
+{% assign icon_style = include.link.icon_style | default: "fas" %}
+
 {% unless include.link.links %}
 <a
   href="{{ include.link.url }}"
@@ -6,9 +8,13 @@
   id="nav-{{ include.link.title | slugify }}"
 >
   {% if include.link.icon %}
-  <i class="far fa-{{include.link.icon}}"></i>
-  {% endif %} {{ include.link.title }} {% if include.link.badge %}
-  <span class="badge {{ include.link.badge_color }}">{{ include.link.badge }}</span>
+    <i class="{{ icon_style }} fa-{{ include.link.icon }}" aria-hidden="true"></i>
+  {% endif %}
+
+  {{ include.link.title }}
+
+  {% if include.link.badge %}
+    <span class="badge {{ include.link.badge_color }}">{{ include.link.badge }}</span>
   {% endif %}
 </a>
 {% else %}
@@ -17,12 +23,16 @@
   data-target="subnav_{{ include.link.title | slugify }}"
   class="btn nav__item btn__plain subnav-trigger {% if page.url == include.link.url %} active{% elsif include.link.url != '/' and page.url contains include.link.url %} active{% endif %}"
   id="nav-{{ include.link.title | slugify }}"
+  type="button"
 >
   <span class="info">
     {% if include.link.icon %}
-    <i class="far fa-{{include.link.icon}}"></i>
-    {% endif %} {{ include.link.title }}</span
-  >
-  <i class="far fa-chevron-right"></i>
+      <i class="{{ icon_style }} fa-{{ include.link.icon }}" aria-hidden="true"></i>
+    {% endif %}
+
+    {{ include.link.title }}
+  </span>
+
+  <i class="fas fa-chevron-right" aria-hidden="true"></i>
 </button>
 {% endunless %}
