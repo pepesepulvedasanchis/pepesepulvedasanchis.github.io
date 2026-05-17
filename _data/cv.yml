@@ -299,7 +299,7 @@ sections:
 
   - id: "idiomas"
     title: "Idiomas"
-    
+    description: ""
     items:
       - title: "Español"
         subtitle: ""
