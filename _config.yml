@@ -1,16 +1,17 @@
 title: Pepe Sepúlveda
 email: me@pepesepulveda.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Arquitecto de transformaciones digitales.
   Enfocado en el equilibrio entre visión y ejecución.
-url: "https://www.pepesepulveda.com" # must match CNAME host
+url: "https://www.pepesepulveda.com"
 twitter_username: pepe_sepulveda
 github_username: pepesepulvedasanchis
 permalink: pretty
 image_path: /assets/articles/
 repository: pepesepulvedasanchis/pepesepulvedasanchis.github.io
 
-# Feature flag: set to true later to wake the shop back up
+# Feature flag kept only to avoid accidental shop rendering in old includes.
+# The shop is not active.
 shop_enabled: false
 
 sass:
@@ -23,14 +24,3 @@ collections:
     sort_by: date
     permalink: "/:collection/:path/"
     future: true
-
-  # Shop-related collections (kept in the repo, but not generated as pages)
-  collections:
-    output: false
-    sort_by: title
-    permalink: "/prints/:collection/:path/"
-
-  products:
-    output: false
-    sort_by: title
-    permalink: "/prints/:collection/:path/"
