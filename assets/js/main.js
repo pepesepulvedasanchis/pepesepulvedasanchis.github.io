@@ -11,32 +11,30 @@ const swup = new Swup({
     }),
   ],
 });
+
 init();
 swup.on("contentReplaced", init);
 
 var audio_playing;
 
 function init() {
-  document.removeEventListener("scroll", appreciationHandler);
   if (environment == "production") {
     window.gtag("config", "G-GVY559Y564", {
       page_title: document.title,
       page_path: window.location.pathname + window.location.search,
     });
   }
+
   window.scrollTo(0, 0);
   AOS.init();
 
-  const like_button = document.querySelector(".like_button");
-  const like_info = document.querySelector(".like_info");
   const article_info = document.querySelector(".article-info");
-  const back_button = document.querySelector("button#back");
 
   if (confetti.isRunning()) {
     confetti.stop();
   }
 
-  //Hero details handler
+  // Hero details handler
   if (document.getElementById("details-trigger")) {
     let trigger = document.getElementById("details-trigger");
     let details = document.getElementById("details");
@@ -44,6 +42,7 @@ function init() {
     trigger.addEventListener("mouseenter", () => {
       toggleDetails();
     });
+
     trigger.addEventListener("mouseleave", () => {
       toggleDetails();
     });
@@ -53,7 +52,7 @@ function init() {
     }
   }
 
-  //Index featured images
+  // Index featured images
   if (document.getElementById("index-features")) {
     let features = document.getElementById("index-features");
     let image1 = document.getElementById("image-1");
@@ -63,7 +62,7 @@ function init() {
     let image5 = document.getElementById("image-5");
     let scrolloffset = 100;
 
-    window.addEventListener("scroll", (e) => {
+    window.addEventListener("scroll", () => {
       image1.style.transform = `translateY(${(features.offsetTop / window.scrollY) * 130 - scrolloffset}%)`;
       image2.style.transform = `translateY(${(features.offsetTop / window.scrollY) * 110 - scrolloffset}%)`;
       image3.style.transform = `translateY(${(features.offsetTop / window.scrollY) * 160 - scrolloffset}%)`;
@@ -72,7 +71,7 @@ function init() {
     });
   }
 
-  //Video player indicator
+  // Video player indicator
   if (document.querySelector("video")) {
     document.querySelectorAll("video").forEach((video) => {
       if (video.readyState >= video.HAVE_CURRENT_DATA) {
@@ -83,12 +82,15 @@ function init() {
         });
       }
     });
+
     function listenToVideoState(video) {
       video.parentElement.style.setProperty("--duration", `${video.duration}s`);
+
       video.addEventListener("playing", () => {
         video.parentElement.classList.add("playing");
         video.setAttribute("state", "playing");
       });
+
       video.addEventListener("pause", () => {
         video.parentElement.classList.remove("playing");
         video.setAttribute("state", "paused");
@@ -101,102 +103,23 @@ function init() {
       const button_text = button.querySelector(`#button-text`);
       const button_icon = button.querySelector(`#button-icon`);
       const video = document.querySelector(`video#${button.getAttribute("data-for")}`);
+
       button.addEventListener("click", () => {
         if (video.paused) {
           video.play();
           video.setAttribute("state", "playing");
           button_icon.classList.replace("fa-play", "fa-pause");
-          button_text.innerText = "Pause video";
+          button_text.innerText = "Pausar vídeo";
         } else {
           video.pause();
           video.setAttribute("state", "paused");
           button_icon.classList.replace("fa-pause", "fa-play");
-          button_text.innerText = "Play video";
+          button_text.innerText = "Reproducir vídeo";
         }
       });
     });
   }
 
-  //Appreciation handler
-  if (document.querySelector(".count")) {
-    document.querySelectorAll(".count").forEach((count_element) => {
-      const slug = count_element.getAttribute("data-id");
-      let xhttp = new XMLHttpRequest();
-      xhttp.open("GET", `https://data.connellmccarthy.com/.netlify/functions/api/article?ref=${slug}`, true);
-      xhttp.setRequestHeader(
-        "Authorization",
-        `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjpbImh0dHA6Ly9sb2NhbGhvc3Q6NDAwMCIsImh0dHBzOi8vY29ubmVsbG1jY2FydGh5LmNvbSJdLCJpYXQiOjE2NDE3NDQ2Njd9.7Dv0xI60IIANn0PxyCf_4UR-1usidXMPYiKa3eyLHuk`
-      );
-      xhttp.send();
-      xhttp.onload = function () {
-        count_element.classList.remove("loading");
-        count_element.innerText = JSON.parse(xhttp.response).count;
-        count_element.parentElement.classList.remove("processing");
-      };
-    });
-  }
-  if (like_button || like_info) {
-    document.addEventListener("scroll", appreciationHandler);
-    const slug = window.location.href.split("/")[4];
-    if (window.localStorage.getItem(slug)) {
-      document.querySelectorAll(".like_button_icon").forEach((el) => {
-        el.classList.replace("far", "fas");
-      });
-      document.querySelectorAll(".like_button").forEach((el) => {
-        el.classList.add("liked");
-      });
-    }
-    document.querySelectorAll(".like_button").forEach((el) => {
-      el.addEventListener("click", () => {
-        if (!el.classList.contains("liked")) {
-          let xhttp = new XMLHttpRequest();
-          xhttp.open("POST", `https://data.connellmccarthy.com/.netlify/functions/api/article?ref=${slug}`, true);
-          xhttp.setRequestHeader(
-            "Authorization",
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjpbImh0dHA6Ly9sb2NhbGhvc3Q6NDAwMCIsImh0dHBzOi8vY29ubmVsbG1jY2FydGh5LmNvbSJdLCJpYXQiOjE2NDE3NDQ2Njd9.7Dv0xI60IIANn0PxyCf_4UR-1usidXMPYiKa3eyLHuk"
-          );
-          xhttp.send();
-          xhttp.onload = () => {
-            el.classList.toggle("animate");
-            document.querySelectorAll(".like_button_icon").forEach((icon) => {
-              icon.classList.replace("far", "fas");
-            });
-            document.querySelectorAll(".like_button").forEach((like_button_all) => {
-              like_button_all.classList.add("liked");
-            });
-            window.localStorage.setItem(slug, true);
-            document.querySelectorAll(".count").forEach((count_element) => {
-              let count = parseInt(count_element.innerText) + 1;
-              count_element.innerText = count;
-            });
-          };
-        } else {
-          //Remove like
-          let xhttp = new XMLHttpRequest();
-          xhttp.open("DELETE", `https://data.connellmccarthy.com/.netlify/functions/api/article?ref=${slug}`, true);
-          xhttp.setRequestHeader(
-            "Authorization",
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjpbImh0dHA6Ly9sb2NhbGhvc3Q6NDAwMCIsImh0dHBzOi8vY29ubmVsbG1jY2FydGh5LmNvbSJdLCJpYXQiOjE2NDE3NDQ2Njd9.7Dv0xI60IIANn0PxyCf_4UR-1usidXMPYiKa3eyLHuk"
-          );
-          xhttp.send();
-          xhttp.onload = () => {
-            el.classList.toggle("animate");
-            document.querySelectorAll(".like_button_icon").forEach((icon) => {
-              icon.classList.replace("fas", "far");
-            });
-            document.querySelectorAll(".like_button").forEach((like_button_all) => {
-              like_button_all.classList.remove("liked");
-            });
-            window.localStorage.removeItem(slug);
-            document.querySelectorAll(".count").forEach((count_element) => {
-              let count = parseInt(count_element.innerText) - 1;
-              count_element.innerText = count;
-            });
-          };
-        }
-      });
-    });
-  }
   if (article_info) {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 250 && !article_info.classList.contains("active")) {
@@ -207,9 +130,10 @@ function init() {
     });
   }
 
-  //Article media
+  // Article media
   if (document.querySelector("[data-lightbox]")) {
     const lightbox = new Lightbox();
+
     if (document.querySelector("[data-article-content]")) {
       document
         .querySelector("[data-article-content]")
@@ -222,17 +146,18 @@ function init() {
           });
         });
     }
-    //gallery drag to scroll
+
+    // Gallery drag to scroll
     if (document.querySelector("[data-gallery]")) {
       document.querySelectorAll("[data-gallery]").forEach((el) => new Gallery(el, lightbox));
     }
   }
 
-  //Newsletter form
+  // Newsletter form
   if (document.querySelector("form.newsletter_form")) {
     if (window.localStorage.getItem("newsletter")) {
       document.querySelector("#newsletter__body").innerText =
-        `You're already receiving email notifications to ${window.localStorage.getItem("newsletter")}`;
+        `Ya estás recibiendo notificaciones en ${window.localStorage.getItem("newsletter")}`;
       document.querySelector("form.newsletter_form").remove();
     } else {
       document.querySelector("form.newsletter_form").addEventListener("submit", (event) => {
@@ -248,6 +173,7 @@ function init() {
   if (document.querySelector(".audio_wavesurfer")) {
     document.querySelectorAll(".audio_wavesurfer").forEach((el) => {
       let id = el.getAttribute("data-id");
+
       let newAudio = WaveSurfer.create({
         container: `#waveform-${id}`,
         id: id,
@@ -262,19 +188,25 @@ function init() {
         responsive: true,
         fillParent: true,
       });
+
       newAudio.load(el.getAttribute("data-src"));
+
       const icon = document.getElementById(`icon-${id}`);
+
       el.addEventListener("click", () => {
         if (icon.classList.contains("fa-play")) {
           if (audio_playing) {
             audio_playing.pause();
+
             if (document.getElementById(`icon-${audio_playing.options.id}`)) {
               document.getElementById(`icon-${audio_playing.options.id}`).classList.replace("fa-pause", "fa-play");
             }
+
             audio_playing = newAudio;
           } else {
             audio_playing = newAudio;
           }
+
           newAudio.play();
           icon.classList.replace("fa-play", "fa-pause");
         } else {
@@ -302,7 +234,6 @@ function init() {
   }
 
   if (document.querySelector(".video_trigger")) {
-    //Set video outside main
     const video_modal = document.querySelector(".video_modal");
     document.querySelector("body").appendChild(video_modal);
 
@@ -310,11 +241,13 @@ function init() {
       el.addEventListener("click", () => {
         if (video_modal.classList.contains("active")) {
           video_modal.classList.remove("active");
+
           setTimeout(() => {
             video_modal.style.display = "none";
           }, 400);
         } else {
           video_modal.style.display = "flex";
+
           setTimeout(() => {
             video_modal.classList.add("active");
           }, 20);
@@ -329,18 +262,19 @@ function init() {
     });
   });
 
-  //Remove article image wrapper
+  // Remove article image wrapper
   if (document.querySelector(".article-content")) {
     document.querySelectorAll(".article-content p img").forEach(function (el) {
       const parent = el.parentElement;
       document.querySelector(".article-content").insertBefore(el, parent);
+
       if (parent.childElementCount == 0) {
         parent.remove();
       }
     });
   }
 
-  //Product image loading handler
+  // Product image loading handler
   if (document.querySelector(".product_image")) {
     document.querySelectorAll(".product_image img").forEach((el) => {
       el.addEventListener("load", () => {
@@ -350,19 +284,22 @@ function init() {
     });
   }
 
-  //Product quickview
+  // Product quickview
   if (document.querySelector(".product-modal") && document.querySelector(".product-modal-trigger")) {
     document.querySelectorAll(".product-modal-trigger").forEach((el) => {
       el.addEventListener("click", () => {
         let id = el.getAttribute("data-product-id");
+
         if (document.getElementById(`product-modal-${id}`).classList.contains("active")) {
           document.getElementById(`product-modal-${id}`).classList.toggle("active");
           document.getElementById(`product-fade-${id}`).classList.toggle("active");
+
           setTimeout(() => {
             document.getElementById(`product-modal-${id}`).style.display = "none";
           }, 400);
         } else {
           document.getElementById(`product-modal-${id}`).style.display = "block";
+
           setTimeout(() => {
             document.getElementById(`product-modal-${id}`).classList.toggle("active");
             document.getElementById(`product-fade-${id}`).classList.toggle("active");
@@ -372,36 +309,29 @@ function init() {
     });
   }
 
-  //Tree count
+  // Tree count
   if (document.getElementById("treecount")) {
     let pledgeTrees = new XMLHttpRequest();
     let key = '<h1 class="h3 widget-title">$';
+
     pledgeTrees.open("GET", "https://www.pledge.to/widgets/impact/em34jezzqn0exO3LPY92Ng", true);
     pledgeTrees.send();
+
     pledgeTrees.onload = () => {
       let pos1 = pledgeTrees.response.indexOf(key) + key.length;
       let pos2 = pledgeTrees.response.indexOf(`</h1>`);
       let result = pledgeTrees.response.substring(pos1, pos2);
+
       document.getElementById("treecount").innerText = result;
       document.getElementById("treecount").classList.remove("loading");
     };
   }
 }
 
-function appreciationHandler() {
-  if (
-    window.scrollY > document.body.clientHeight / 4 &&
-    !document.querySelector(".like_button").classList.contains("liked")
-  ) {
-    document.querySelector(".appreciation_info").classList.add("active");
-  } else {
-    document.querySelector(".appreciation_info").classList.remove("active");
-  }
-}
-
 function linkHandler(el) {
   if (el.getAttribute("target") == null && el.getAttribute("data-no-swup") == null) {
     switchPage(el);
+
     if (audio_playing) {
       audio_playing.pause();
     }
@@ -410,6 +340,7 @@ function linkHandler(el) {
 
 function switchPage(url) {
   removeActiveMenuItem();
+
   if (document.querySelectorAll(`.nav__item[href="${url.getAttribute("href")}"]`)) {
     document.querySelectorAll(`.nav__item[href="${url.getAttribute("href")}"]`).forEach((x) => {
       x.classList.add("active");
@@ -436,17 +367,20 @@ function subscribe() {
 
   if (email && ref) {
     let iframe = document.createElement("iframe");
+
     iframe.setAttribute("src", submitURL);
     iframe.setAttribute("hidden", "true");
+
     iframe.addEventListener("load", () => {
       document.querySelector(".newsletter__icon").classList.add("success");
       document.querySelector("i#newsletter__icon").classList.replace("fa-paper-plane", "fa-check");
-      document.querySelector("#newsletter__heading").innerText = "Thanks for subscribing!";
+      document.querySelector("#newsletter__heading").innerText = "Gracias por suscribirte";
       document.querySelector("#newsletter__body").innerText =
-        "You'll now receive email notifications whenever a new article is published.";
+        "Recibirás una notificación cuando publique nuevo contenido.";
       document.querySelector("form.newsletter_form").remove();
       confetti.start();
     });
+
     window.localStorage.setItem("newsletter", decodeURIComponent(email));
     document.body.append(iframe);
   } else {
