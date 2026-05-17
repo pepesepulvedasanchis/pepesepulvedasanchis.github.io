@@ -299,7 +299,7 @@ sections:
 
   - id: "idiomas"
     title: "Idiomas"
-    description: "Nivel aproximado (ajusta a tu realidad)."
+    
     items:
       - title: "Español"
         subtitle: ""
