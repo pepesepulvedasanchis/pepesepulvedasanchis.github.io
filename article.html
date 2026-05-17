@@ -26,7 +26,11 @@ slug: articles
       <div class="articles__item">
         <a class="articles__item__thumb" href="{{ article.url }}">
           <div class="article_thumbnail">
-            <img src="{{ site.image_path }}{{ article.slug }}/{{ article.thumbnail }}" alt="{{ article.title }}" />
+            <img
+              src="{{ site.image_path }}{{ article.slug }}/{{ article.thumbnail }}"
+              alt="{{ article.title }}"
+              loading="lazy"
+            />
           </div>
         </a>
 
