@@ -144,4 +144,3 @@ cta_heading: Mantente en contacto
 
 </div>
 
-{% include newsletter.html %}
