@@ -30,10 +30,6 @@ function init() {
 
   const article_info = document.querySelector(".article-info");
 
-  if (confetti.isRunning()) {
-    confetti.stop();
-  }
-
   // Hero details handler
   if (document.getElementById("details-trigger")) {
     let trigger = document.getElementById("details-trigger");
@@ -150,23 +146,6 @@ function init() {
     // Gallery drag to scroll
     if (document.querySelector("[data-gallery]")) {
       document.querySelectorAll("[data-gallery]").forEach((el) => new Gallery(el, lightbox));
-    }
-  }
-
-  // Newsletter form
-  if (document.querySelector("form.newsletter_form")) {
-    if (window.localStorage.getItem("newsletter")) {
-      document.querySelector("#newsletter__body").innerText =
-        `Ya estás recibiendo notificaciones en ${window.localStorage.getItem("newsletter")}`;
-      document.querySelector("form.newsletter_form").remove();
-    } else {
-      document.querySelector("form.newsletter_form").addEventListener("submit", (event) => {
-        event.preventDefault();
-        subscribe();
-        document.querySelector(".newsletter__submit").classList.add("loading");
-        document.querySelector(".newsletter__submit").setAttribute("disabled", true);
-        document.querySelector(".newsletter__email").setAttribute("disabled", true);
-      });
     }
   }
 
@@ -354,36 +333,4 @@ function removeActiveMenuItem() {
       el.classList.toggle("active");
     }
   });
-}
-
-function subscribe() {
-  var email = encodeURIComponent(document.forms["newsletter_form"]["email"].value);
-  var ref = encodeURIComponent(document.forms["newsletter_form"]["ref"].value);
-  var entry_email = "entry.1684792530";
-  var entry_ref = "entry.1800592224";
-  var base_url =
-    "https://docs.google.com/forms/d/e/1FAIpQLSdmipvslotruk2_Mg8S9R_Ux6IJklJgRKW1yUEd0225CjLWdg/formResponse?";
-  var submitURL = base_url + entry_email + "=" + email + "&" + entry_ref + "=" + ref + "&submit=Submit";
-
-  if (email && ref) {
-    let iframe = document.createElement("iframe");
-
-    iframe.setAttribute("src", submitURL);
-    iframe.setAttribute("hidden", "true");
-
-    iframe.addEventListener("load", () => {
-      document.querySelector(".newsletter__icon").classList.add("success");
-      document.querySelector("i#newsletter__icon").classList.replace("fa-paper-plane", "fa-check");
-      document.querySelector("#newsletter__heading").innerText = "Gracias por suscribirte";
-      document.querySelector("#newsletter__body").innerText =
-        "Recibirás una notificación cuando publique nuevo contenido.";
-      document.querySelector("form.newsletter_form").remove();
-      confetti.start();
-    });
-
-    window.localStorage.setItem("newsletter", decodeURIComponent(email));
-    document.body.append(iframe);
-  } else {
-    console.log("Error: No values passed to function.");
-  }
 }
