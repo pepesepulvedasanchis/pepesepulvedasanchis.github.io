@@ -1,5 +1,6 @@
 {%- assign item = include.link -%}
 {%- assign has_url = item.url and item.url != '' -%}
+{%- assign icon_style = item.icon_style | default: "fas" -%}
 
 {%- if has_url -%}
 <a
@@ -15,11 +16,11 @@
   <div class="details">
     <div class="thumbnail thumbnail__small {% if item.icon %}icon{% endif %}">
       {% if item.icon %}
-        <i class="far fa-{{ item.icon }}" aria-hidden="true"></i>
+        <i class="{{ icon_style }} fa-{{ item.icon }}" aria-hidden="true"></i>
       {% elsif item.thumbnail %}
         <img src="{{ item.thumbnail }}" alt="{{ item.title | escape }}" loading="lazy" />
       {% else %}
-        <i class="far fa-circle" aria-hidden="true"></i>
+        <i class="fas fa-circle" aria-hidden="true"></i>
       {% endif %}
     </div>
 
@@ -57,10 +58,10 @@
   </div>
 
   {% if has_url %}
-  <div class="arrow">
-    <span class="visually-hidden">Open {{ item.title }}</span>
-    <i class="far fa-arrow-right {% if item.external %}external{% endif %}" aria-hidden="true"></i>
-  </div>
+    <div class="arrow">
+      <span class="visually-hidden">Abrir {{ item.title }}</span>
+      <i class="fas fa-arrow-right {% if item.external %}external{% endif %}" aria-hidden="true"></i>
+    </div>
   {% endif %}
 
 {%- if has_url -%}
